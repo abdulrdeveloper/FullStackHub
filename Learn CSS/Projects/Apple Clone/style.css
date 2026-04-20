@@ -1,0 +1,1872 @@
+body {
+    margin: 0%;
+    padding: 0%;
+
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.966);
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.959);
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-right: 15px;
+    z-index: 9999;
+    flex-wrap: wrap;
+}
+
+.header a {
+    color: rgba(0, 0, 0, 0.795);
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 13px;
+    text-align: center;
+    transition: all 0.1s ease-in-out;
+}
+
+a:hover {
+    color: black;
+}
+
+
+.storedata{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 70px;
+    background-color: rgb(255, 255, 255);
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: -18%;
+    width: 901px;
+    padding: 16% 11% 0% 35.5%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out 0.3s;
+    transform: translateY(-65px);
+}
+
+
+.storedata div {
+    position: relative;
+    left: -60px;
+    top: -155px;
+}
+
+.storedata p {
+    cursor: default;
+    color: rgba(0, 0, 0, 0.541);
+    margin-bottom: 9px;
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.shop1list a {
+    font-size: 28px;
+    line-height: 39px;
+    font-weight: 600;
+}
+
+.shop2list a {
+    line-height: 26px;
+    font-weight: 600;
+}
+
+.shop3list a {
+    line-height: 26px;
+    font-weight: 600;
+}
+
+.store:hover .storedata {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+
+.Macdata {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 70px;
+    background-color: rgb(255, 255, 255);
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: -18%;
+    width: 901px;
+    padding: 16% 11% 0% 35.5%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out 0.3s;
+    transform: translateY(-65px);
+}
+
+.Macdata div {
+    position: relative;
+    left: -60px;
+    top: -155px;
+}
+
+.Macdata p {
+    cursor: default;
+    color: rgba(0, 0, 0, 0.541);
+    margin-bottom: 9px;
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.Mac1list a {
+    font-size: 28px;
+    line-height: 39px;
+    font-weight: 600;
+}
+
+.Mac2list a {
+    line-height: 26px;
+    font-weight: 600;
+}
+
+.Mac3list a {
+    line-height: 26px;
+    font-weight: 600;
+}
+
+.Mac:hover .Macdata {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+.last2tagsofmac a {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    line-height: 20px;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.705);
+    font-weight: 600;
+    cursor: pointer;
+    text-align: left;
+    position: relative;
+    left: 62px;
+    top: 158px;
+    transition: all 0.2s ease-in-out;
+}
+
+.last2tagsofmac:hover a {
+    color: black;
+}
+
+
+
+.iPaddata {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 70px;
+    background-color: rgb(255, 255, 255);
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: -18%;
+    width: 901px;
+    padding: 16% 11% 0% 35.5%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out 0.3s;
+    transform: translateY(-65px);
+}
+
+.iPaddata div {
+    position: relative;
+    left: -60px;
+    top: -155px;
+}
+
+.iPaddata p {
+    cursor: default;
+    color: rgba(0, 0, 0, 0.541);
+    margin-bottom: 9px;
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.iPad1list a {
+    font-size: 28px;
+    line-height: 39px;
+    font-weight: 600;
+}
+
+.iPad2list a {
+    line-height: 26px;
+    font-weight: 600;
+}
+
+.iPad3list a {
+    line-height: 26px;
+    font-weight: 600;
+}
+
+.iPad:hover .iPaddata {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+
+.last2tagsofipad a {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    line-height: 20px;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.705);
+    font-weight: 600;
+    cursor: pointer;
+    text-align: left;
+    position: relative;
+    left: 62px;
+    top: 158px;
+    transition: all 0.2s ease-in-out;
+}
+
+.last2tagsofipad:hover a {
+    color: black;
+}
+
+
+
+.iPhonedata {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 70px;
+    background-color: rgb(255, 255, 255);
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: -18%;
+    width: 901px;
+    padding: 16% 11% 0% 35.5%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out 0.3s;
+    transform: translateY(-65px);
+}
+
+.iPhonedata div {
+    position: relative;
+    left: -60px;
+    top: -155px;
+}
+
+.iPhonedata p {
+    cursor: default;
+    color: rgba(0, 0, 0, 0.541);
+    margin-bottom: 9px;
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.iPhone1list a {
+    font-size: 28px;
+    line-height: 39px;
+    font-weight: 600;
+}
+
+.iPhone2list a {
+    line-height: 26px;
+    font-weight: 600;
+}
+
+.iPhone3list a {
+    line-height: 26px;
+    font-weight: 600;
+}
+
+.iPhone:hover .iPhonedata {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+
+.last2tagsofiphone a {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    line-height: 20px;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.705);
+    font-weight: 600;
+    cursor: pointer;
+    text-align: left;
+    position: relative;
+    left: 62px;
+    top: 158px;
+    transition: all 0.2s ease-in-out;
+}
+
+.last2tagsofiphone:hover a {
+    color: black;
+}
+
+
+
+.Watchdata {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 70px;
+    background-color: rgb(255, 255, 255);
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: -18%;
+    width: 901px;
+    padding: 16% 11% 0% 35.5%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out 0.3s;
+    transform: translateY(-65px);
+}
+
+.Watchdata div {
+    position: relative;
+    left: -60px;
+    top: -155px;
+}
+
+.Watchdata p {
+    cursor: default;
+    color: rgba(0, 0, 0, 0.541);
+    margin-bottom: 9px;
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.Watch1list a {
+    font-size: 28px;
+    line-height: 39px;
+    font-weight: 600;
+}
+
+.Watch2list a {
+    line-height: 26px;
+    font-weight: 600;
+}
+
+.Watch3list a {
+    line-height: 26px;
+    font-weight: 600;
+}
+
+.Watch:hover .Watchdata {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+
+.last2tagsofWatch a {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    line-height: 20px;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.705);
+    font-weight: 600;
+    cursor: pointer;
+    text-align: left;
+    position: relative;
+    left: 62px;
+    top: 158px;
+    transition: all 0.2s ease-in-out;
+}
+
+.last2tagsofWatch:hover a {
+    color: black;
+}
+
+
+
+.Visiondata {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 70px;
+    background-color: rgb(255, 255, 255);
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: -18%;
+    width: 901px;
+    padding: 16% 11% 0% 35.5%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out 0.3s;
+    transform: translateY(-65px);
+}
+
+.Visiondata div {
+    position: relative;
+    left: -60px;
+    top: -155px;
+}
+
+.Visiondata p {
+    cursor: default;
+    color: rgba(0, 0, 0, 0.541);
+    margin-bottom: 9px;
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.Vision1list a {
+    font-size: 28px;
+    line-height: 39px;
+    font-weight: 600;
+}
+
+.Vision2list a {
+    line-height: 26px;
+    font-weight: 600;
+}
+
+.Vision3list a {
+    line-height: 26px;
+    font-weight: 600;
+}
+
+.Vision:hover .Visiondata {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+
+.last2tagsofVision a {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    line-height: 20px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.822);
+    font-weight: 600;
+    cursor: pointer;
+    text-align: left;
+    position: relative;
+    left: 62px;
+    top: 158px;
+    transition: all 0.2s ease-in-out;
+}
+
+.last2tagsofVision:hover a {
+    color: black;
+}
+
+
+
+.AirPodsdata {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 70px;
+    background-color: rgb(255, 255, 255);
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: -18%;
+    width: 901px;
+    padding: 16% 11% 0% 35.5%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out 0.3s;
+    transform: translateY(-65px);
+}
+
+.AirPodsdata div {
+    position: relative;
+    left: -60px;
+    top: -155px;
+}
+
+.AirPodsdata p {
+    cursor: default;
+    color: rgba(0, 0, 0, 0.541);
+    margin-bottom: 9px;
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.AirPods1list a {
+    font-size: 28px;
+    line-height: 39px;
+    font-weight: 600;
+}
+
+.AirPods2list a {
+    line-height: 26px;
+    font-weight: 600;
+}
+
+.AirPods3list a {
+    line-height: 26px;
+    font-weight: 600;
+}
+
+.AirPods:hover .AirPodsdata {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+
+.last2tagsofAirPods a {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    line-height: 20px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.822);
+    font-weight: 600;
+    cursor: pointer;
+    text-align: left;
+    position: relative;
+    left: 62px;
+    top: 158px;
+    transition: all 0.2s ease-in-out;
+}
+
+.last2tagsofAirPods:hover a {
+    color: black;
+}
+
+
+.TVHomedata {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 70px;
+    background-color: rgb(255, 255, 255);
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: -18%;
+    width: 901px;
+    padding: 16% 11% 0% 35.5%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out 0.3s;
+    transform: translateY(-65px);
+}
+
+.TVHomedata div {
+    position: relative;
+    left: -60px;
+    top: -155px;
+}
+
+.TVHomedata p {
+    cursor: default;
+    color: rgba(0, 0, 0, 0.541);
+    margin-bottom: 9px;
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.TVHome1list a {
+    font-size: 28px;
+    line-height: 39px;
+    font-weight: 600;
+}
+
+.TVHome2list a {
+    line-height: 26px;
+    font-weight: 600;
+}
+
+.TVHome3list a {
+    line-height: 26px;
+    font-weight: 600;
+}
+
+.TVHome:hover .TVHomedata {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+
+
+.Entertainmentdata {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 70px;
+    background-color: rgb(255, 255, 255);
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: -18%;
+    width: 901px;
+    padding: 16% 11% 0% 35.5%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out 0.3s;
+    transform: translateY(-65px);
+}
+
+.Entertainmentdata div {
+    position: relative;
+    left: -60px;
+    top: -155px;
+}
+
+.Entertainmentdata p {
+    cursor: default;
+    color: rgba(0, 0, 0, 0.541);
+    margin-bottom: 9px;
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.Entertainment1list a {
+    font-size: 28px;
+    line-height: 39px;
+    font-weight: 600;
+}
+
+.Entertainment2list a {
+    line-height: 26px;
+    font-weight: 600;
+}
+
+.Entertainment3list a {
+    line-height: 26px;
+    font-weight: 600;
+}
+
+.Entertainment:hover .Entertainmentdata {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+
+
+.Accessoriesdata {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 70px;
+    background-color: rgb(255, 255, 255);
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: -18%;
+    width: 901px;
+    padding: 16% 11% 0% 35.5%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out 0.3s;
+    transform: translateY(-65px);
+}
+
+.Accessoriesdata div {
+    position: relative;
+    left: -60px;
+    top: -155px;
+}
+
+.Accessoriesdata p {
+    cursor: default;
+    color: rgba(0, 0, 0, 0.541);
+    margin-bottom: 9px;
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.Accessories1list a {
+    font-size: 28px;
+    line-height: 39px;
+    font-weight: 600;
+}
+
+.Accessories2list a {
+    line-height: 26px;
+    font-weight: 600;
+}
+
+.Accessories3list a {
+    line-height: 26px;
+    font-weight: 600;
+}
+
+.Accessories:hover .Accessoriesdata {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+
+
+.Supportdata {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 70px;
+    background-color: rgb(255, 255, 255);
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: -18%;
+    width: 901px;
+    padding: 16% 11% 0% 35.5%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out 0.3s;
+    transform: translateY(-65px);
+}
+
+.Supportdata div {
+    position: relative;
+    left: -60px;
+    top: -155px;
+}
+
+.Supportdata p {
+    cursor: default;
+    color: rgba(0, 0, 0, 0.541);
+    margin-bottom: 9px;
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.Support1list a {
+    font-size: 28px;
+    line-height: 39px;
+    font-weight: 600;
+}
+
+.Support2list a {
+    line-height: 26px;
+    font-weight: 600;
+}
+
+.Support3list a {
+    line-height: 26px;
+    font-weight: 600;
+}
+
+.Support:hover .Supportdata {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+
+.last2tagsofSupport a {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    line-height: 20px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.822);
+    font-weight: 600;
+    cursor: pointer;
+    text-align: left;
+    position: relative;
+    left: 62px;
+    top: 158px;
+    transition: all 0.2s ease-in-out;
+}
+
+.last2tagsofSupport:hover a {
+    color: black;
+}
+
+
+.Searchdata {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 70px;
+    background-color: rgb(255, 255, 255);
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: -18%;
+    width: 901px;
+    padding: 16% 11% 25% 35.5%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out 0.1s;
+    transform: translateY(-65px);
+}
+
+#searchbox {
+    width: 50%;
+    height: 50px;
+    position: absolute;
+    top: 13%;
+    left: 28%;
+    padding-left: 45px;
+    font-size: 22px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 30px;
+}
+
+#bigsearchicon {
+    z-index: 1;
+    position: absolute;
+    top: 17.4%;
+    left: 29%;
+}
+
+.Searchlinks {
+    position: absolute;
+    top: 29%;
+    left: 28%;
+}
+
+.Searchlinks p {
+    cursor: default;
+    color: rgba(0, 0, 0, 0.671);
+    margin-bottom: 13px;
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.Searchlinks a {
+    font-size: 16px;
+    line-height: 29px;
+    font-weight: 600;
+}
+
+.Searchname:focus-within .Searchdata {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+
+.shopbagdata {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 70px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: -18%;
+    width: 901px;
+    padding: 6% 11% 15% 35.5%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out 0.1s;
+    transform: translateY(-65px);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.shopbaglinks {
+    position: absolute;
+    top: 49%;
+    left: 28%;
+}
+
+.shopbaglinks p {
+    cursor: default;
+    color: rgba(0, 0, 0, 0.671);
+    margin-bottom: 15px;
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+#nearproductsigninoption:hover {
+    text-decoration: underline;
+}
+
+.shopbaglinks a {
+    font-size: 16px;
+    line-height: 29px;
+    font-weight: 600;
+}
+
+.shopbagname:focus-within .shopbagdata {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+
+
+.fullwidthformain {
+    background-color: #f5f5f7;
+    padding-bottom: 245px;
+    position: relative;
+    width: 100%;
+    top: 0px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.firstimgofiphone {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 243px;
+    z-index: -1;
+}
+
+.firstimgofiphone img {
+    width: 70%;
+    height: 70%;
+    cursor: pointer;
+}
+
+.iphoneimg {
+    position: absolute;
+    top: 1%;
+    left: 37%;
+    z-index: 1;
+    line-height: 18px;
+
+
+}
+
+.iphoneimg h1 {
+    font-size: 55px;
+    font-weight: 600;
+    letter-spacing: -3px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.918);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.iphoneimg p {
+    font-size: 31px;
+    color: rgba(0, 0, 0, 0.87);
+    letter-spacing: -1.5px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.iphonebothbuttons {
+    display: flex;
+    gap: 17px;
+    position: absolute;
+    top: 28%;
+    left: 38.5%;
+}
+
+.iphonebothbuttons div {
+    border-radius: 30px;
+    font-size: 17px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.iphone1button a {
+    padding: 11px 21px;
+    color: white;
+    text-decoration: none;
+    background-color: #0077ed;
+    border-radius: 30px;
+
+}
+
+.iphone2button a {
+    padding: 11px 21px;
+    color: #0077ed;
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid #0077ed;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.iphone1button:hover a {
+    background-color: #0682ff;
+}
+
+.iphone2button:hover a {
+    background-color: #0682ff;
+    color: white;
+}
+
+.gradient-text1 {
+    position: absolute;
+    top: 38%;
+    left: 39.5%;
+    font-size: 22px;
+    letter-spacing: 0px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #108cf7, #8072FB, #C45CE3, #EB457B, #ff3939);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+
+.ipadprofullwidth {
+    background-color: #000000;
+    padding-bottom: 300px;
+    position: relative;
+    width: 100%;
+    top: 23px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.firstimgofipadpro {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 233px;
+    z-index: -3;
+}
+
+.firstimgofipadpro img {
+    width: 60%;
+    height: 60%;
+    cursor: pointer;
+}
+
+.ipadpro {
+    position: absolute;
+    top: 2%;
+    left: 27%;
+    z-index: 1;
+    line-height: 18px;
+}
+
+.ipadpro h1 {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -3px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.952);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.ipadpro p {
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.87);
+    letter-spacing: -1.5px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.ipadprobothbuttons {
+    display: flex;
+    gap: 17px;
+    position: absolute;
+    top: 28%;
+    left: 35%;
+}
+
+.ipadprobothbuttons div {
+    border-radius: 30px;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.ipadpro1button a {
+    padding: 11px 21px;
+    color: white;
+    text-decoration: none;
+    background-color: #0077ed;
+    border-radius: 30px;
+
+}
+
+.ipadpro2button a {
+    padding: 11px 21px;
+    color: #0077ed;
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid #0077ed;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.ipadpro1button:hover a {
+    background-color: #0682ff;
+}
+
+.ipadpro2button:hover a {
+    background-color: #0682ff;
+    color: white;
+}
+
+.gradient-text2 {
+    position: absolute;
+    top: 89%;
+    left: 31.5%;
+    font-size: 20px;
+    letter-spacing: 0px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #108cf7, #8072FB, #C45CE3, #EB457B, #ff3939);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+
+.macbookairfullwidth {
+    background-color: #e1ffffda;
+    padding-bottom: 300px;
+    position: relative;
+    width: 100%;
+    top: 23px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.firstimgofmacbookair {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 233px;
+    z-index: -3;
+}
+
+.firstimgofmacbookair img {
+    width: 70%;
+    height: 70%;
+    cursor: pointer;
+}
+
+.macbookair {
+    position: absolute;
+    top: 2%;
+    left: 30%;
+    z-index: 1;
+    line-height: 18px;
+}
+
+.macbookair h1 {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -3px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.952);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.macbookair p {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.87);
+    letter-spacing: -1.5px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.macbookairbothbuttons {
+    display: flex;
+    gap: 17px;
+    position: absolute;
+    top: 33%;
+    left: 36%;
+}
+
+.macbookairbothbuttons div {
+    border-radius: 30px;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.macbookair1button a {
+    padding: 11px 21px;
+    color: white;
+    text-decoration: none;
+    background-color: #0077ed;
+    border-radius: 30px;
+
+}
+
+.macbookair2button a {
+    padding: 11px 21px;
+    color: #0077ed;
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid #0077ed;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.macbookair1button:hover a {
+    background-color: #0682ff;
+}
+
+.macbookair2button:hover a {
+    background-color: #0682ff;
+    color: white;
+}
+
+.gradient-text3 {
+    position: absolute;
+    top: 89%;
+    left: 34.5%;
+    font-size: 20px;
+    letter-spacing: 0px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #108cf7, #8072FB, #C45CE3, #EB457B, #ff3939);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+
+
+.ipadairfullwidth {
+    background-color: #ccffff;
+    padding-bottom: 300px;
+    position: relative;
+    width: 100%;
+    top: 35px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.firstimgofipadair {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 233px;
+    z-index: -3;
+}
+
+.firstimgofipadair img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.ipadair {
+    position: absolute;
+    top: 2%;
+    left: 27%;
+    z-index: 1;
+    line-height: 18px;
+}
+
+.ipadair h1 {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -3px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.952);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.ipadair p {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.87);
+    letter-spacing: -1.5px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.ipadairbothbuttons {
+    display: flex;
+    gap: 17px;
+    position: absolute;
+    top: 21%;
+    left: 35%;
+}
+
+.ipadairbothbuttons div {
+    border-radius: 30px;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.ipadair1button a {
+    padding: 11px 21px;
+    color: white;
+    text-decoration: none;
+    background-color: #0077ed;
+    border-radius: 30px;
+
+}
+
+.ipadair2button a {
+    padding: 11px 21px;
+    color: #0077ed;
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid #0077ed;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.ipadair1button:hover a {
+    background-color: #0682ff;
+}
+
+.ipadair2button:hover a {
+    background-color: #0682ff;
+    color: white;
+}
+
+.gradient-text4 {
+    position: absolute;
+    top: 89%;
+    left: 31.5%;
+    font-size: 20px;
+    letter-spacing: 0px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #108cf7, #8072FB, #C45CE3, #EB457B, #ff3939);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+
+
+.applewatchfullwidth {
+    background-color: #f5f5f7;
+    padding-bottom: 300px;
+    position: relative;
+    width: 100%;
+    top: 35px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.firstimgofapplewatch {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 233px;
+    z-index: -3;
+}
+
+.firstimgofapplewatch img {
+    width: 60%;
+    height: 60%;
+    cursor: pointer;
+}
+
+.applewatch {
+    position: absolute;
+    top: 2%;
+    left: 39%;
+    z-index: 1;
+    line-height: 18px;
+}
+
+.applewatch h1 {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -3px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.952);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.applewatch p {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.87);
+    letter-spacing: -1px;
+    line-height: 24px;
+    margin-top: -15px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.applewatchbothbuttons {
+    display: flex;
+    gap: 17px;
+    position: absolute;
+    top: 25%;
+    left: 36%;
+}
+
+.applewatchbothbuttons div {
+    border-radius: 30px;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.applewatch1button a {
+    padding: 11px 21px;
+    color: white;
+    text-decoration: none;
+    background-color: #0077ed;
+    border-radius: 30px;
+
+}
+
+.applewatch2button a {
+    padding: 11px 21px;
+    color: #0077ed;
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid #0077ed;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.applewatch1button:hover a {
+    background-color: #0682ff;
+}
+
+.applewatch2button:hover a {
+    background-color: #0682ff;
+    color: white;
+}
+
+.gradient-text5 {
+    position: absolute;
+    top: 89%;
+    left: 34.5%;
+    font-size: 20px;
+    letter-spacing: 0px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #108cf7, #8072FB, #C45CE3, #EB457B, #ff3939);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+
+
+
+
+.tradeinfullwidth {
+    background-color: #f5f5f7;
+    padding-bottom: 300px;
+    position: relative;
+    width: 100%;
+    top: 35px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.firstimgoftradein {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 243px;
+    z-index: -3;
+}
+
+.firstimgoftradein img {
+    width: 100%;
+    height: 60%;
+    cursor: pointer;
+}
+
+.tradein {
+    position: absolute;
+    top: 2%;
+    left: 27%;
+    z-index: 1;
+    line-height: 18px;
+}
+
+.tradein h1 {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -3px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.952);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.tradein p {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.87);
+    letter-spacing: -1px;
+    line-height: 24px;
+    text-align: center;
+    margin-top: -10px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.tradeinbothbuttons {
+    display: flex;
+    gap: 17px;
+    position: absolute;
+    top: 29%;
+    left: 39%;
+}
+
+.tradeinbothbuttons div {
+    border-radius: 30px;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.tradein1button a {
+    padding: 11px 21px;
+    color: white;
+    text-decoration: none;
+    background-color: #0077ed;
+    border-radius: 30px;
+
+}
+
+.tradein1button:hover a {
+    background-color: #0682ff;
+}
+
+.gradient-text6 {
+    position: absolute;
+    top: 89%;
+    left: 31.5%;
+    font-size: 20px;
+    letter-spacing: 0px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #108cf7, #8072FB, #C45CE3, #EB457B, #ff3939);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+
+
+.cardfullwidth {
+    background-color: #f5f5f7;
+    padding-bottom: 300px;
+    position: relative;
+    width: 100%;
+    top: 35px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.firstimgofcard {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 257px;
+    z-index: -3;
+}
+
+.firstimgofcard img {
+    width: 60%;
+    height: 60%;
+    cursor: pointer;
+}
+
+.card {
+    position: absolute;
+    top: 2%;
+    left: 27%;
+    z-index: 1;
+    line-height: 18px;
+}
+
+.card h1 {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.952);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.card p {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.87);
+    letter-spacing: 0px;
+    line-height: 24px;
+    margin-top: -15px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.cardbothbuttons {
+    display: flex;
+    gap: 17px;
+    position: absolute;
+    top: 30%;
+    left: 33%;
+}
+
+.cardbothbuttons div {
+    flex-wrap: wrap;
+    border-radius: 30px;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.card1button a {
+    padding: 11px 21px;
+    color: white;
+    text-decoration: none;
+    background-color: #0077ed;
+    border-radius: 30px;
+
+}
+
+.card2button a {
+    padding: 11px 21px;
+    color: #0077ed;
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid #0077ed;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.card1button:hover a {
+    background-color: #0682ff;
+}
+
+.card2button:hover a {
+    background-color: #0682ff;
+    color: white;
+}
+
+.gradient-text7 {
+    position: absolute;
+    top: 89%;
+    left: 31.5%;
+    font-size: 20px;
+    letter-spacing: 0px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #108cf7, #8072FB, #C45CE3, #EB457B, #ff3939);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+
+
+.all2imageswidth {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.thenext3and4imageswidth {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.thenext5and6imageswidth {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #f5f5f7;
+    padding: 40px 5% 60px;
+    margin-top: 30px;
+}
+
+hr {
+    width: 100%;
+    margin: 0 0 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.firstcolomn {
+    display: flex;
+    flex-direction: column;
+    min-width: 180px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.footercolomn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 60px;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.firstcolomn a {
+    font-size: 13px;
+    line-height: 24px;
+    color: #000000c9;
+    text-decoration: none;
+}
+
+.firstcolomn p {
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.hr1 hr {
+    width: 100%;
+    margin: 0 0 20px;
+}
+
+.myname {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+
+
+/* Tablet Screens */
+@media (max-width: 991px) {
+    h1 {
+        font-size: 36px;
+        letter-spacing: -1px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .iphoneimg,
+    .ipadpro,
+    .macbookair,
+    .ipadair,
+    .applewatch,
+    .tradein,
+    .card {
+        left: 10%;
+        top: 5%;
+    }
+
+    .iphonebothbuttons,
+    .ipadprobothbuttons,
+    .macbookairbothbuttons,
+    .ipadairbothbuttons,
+    .applewatchbothbuttons,
+    .tradeinbothbuttons,
+    .cardbothbuttons {
+        flex-direction: row;
+        align-items: center;
+        left: 10%;
+        top: 40%;
+    }
+
+    .firstimgofiphone img,
+    .firstimgofipadpro img,
+    .firstimgofmacbookair img,
+    .firstimgofipadair img,
+    .firstimgofapplewatch img,
+    .firstimgoftradein img,
+    .firstimgofcard img {
+        width: 90%;
+        height: auto;
+    }
+
+    .gradient-text1,
+    .gradient-text2,
+    .gradient-text3,
+    .gradient-text4,
+    .gradient-text5,
+    .gradient-text6,
+    .gradient-text7 {
+        left: 10%;
+        font-size: 18px;
+    }
+
+    .footercolomn {
+        flex-direction: column;
+        left: 5%;
+        gap: 30px;
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .iphoneimg,
+    .ipadpro,
+    .macbookair,
+    .ipadair,
+    .applewatch,
+    .tradein,
+    .card {
+        left: 5%;
+        top: 5%;
+    }
+
+    .iphonebothbuttons,
+    .ipadprobothbuttons,
+    .macbookairbothbuttons,
+    .ipadairbothbuttons,
+    .applewatchbothbuttons,
+    .tradeinbothbuttons,
+    .cardbothbuttons {
+        flex-direction: row;
+        align-items: center;
+        left: 5%;
+        top: 45%;
+    }
+
+    .firstimgofiphone img,
+    .firstimgofipadpro img,
+    .firstimgofmacbookair img,
+    .firstimgofipadair img,
+    .firstimgofapplewatch img,
+    .firstimgoftradein img,
+    .firstimgofcard img {
+        width: 100%;
+        height: auto;
+    }
+
+    .gradient-text1,
+    .gradient-text2,
+    .gradient-text3,
+    .gradient-text4,
+    .gradient-text5,
+    .gradient-text6,
+    .gradient-text7 {
+        left: 5%;
+        font-size: 16px;
+        top: 90%;
+    }
+
+    .footercolomn {
+        flex-direction: column;
+        gap: 20px;
+        left: 5%;
+    }
+
+    .myname {
+        position: static;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+}
