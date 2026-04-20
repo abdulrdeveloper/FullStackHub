@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="I'm Abdul Rahman, a front-end web developer who crafts fast, responsive, and animated websites using HTML and CSS. Explore my projects and design skills.">
+    <title>Abdul Rahman | Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="assets/images/AR.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header >
+        <span class="topname">Abdul Rahman</span>
+        <div class="humburger" tabindex="0"><i class="fa-solid fa-bars-staggered fa-lg" style="color: #9b64ff;"></i>
+            <i id="cross" class="fa-solid fa-xmark fa-xl"></i>
+            <div class="navigation" tabindex="0">
+                <a id="homeacolor" href="index.html">Home</a>
+                <a href="pages/about.html">About</a>
+                <a href="pages/service.html">Service</a>
+                <a href="pages/portfolio.html">Portfolio</a>
+                <a href="pages/resume.html">Resume</a>
+                <a href="pages/blog.html">Blog</a>
+                <a href="pages/contact.html">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="imgborder">
+                <img tabindex="0" id="abdulpic" src="assets/images/abdulphoto.jpeg" fetchpriority="high" loading="lazy"
+                    alt="Abdul Rahman">
+            </div>
+            <div class="data">
+                <h1>HELLO!</h1>
+                <h2>I am Abdul Rahman</h2>
+                <p>Front-End Web Developer and Graphic Designer with 1 year of hands-on experience — crafting clean,
+                    responsive websites and engaging visuals with HTML, CSS, and creativity... and more.</p>
+            </div>
+
+            <div class="bothbuttons">
+                <div class="button">
+                    <a href="pages/contact.html">Hire me <i class="fa-solid fa-briefcase"></i>
+                    </a>
+                </div>
+                <div class="button1">
+                    <a id="animateline" href="pages/portfolio.html">View Work <i class="fa-solid fa-laptop-code"></i>
+                    </a>
+                </div>
+            </div>
+        </section><br><br>
+       
+    </main>
+
+    <footer>
+        <a href="https://www.facebook.com/abdul.rahman.585923/followers" target="_blank"><i
+                class="fa-brands fa-facebook-f fa-lg" style="color:#ff58a3ea;"></i></a>
+        <a href="https://www.instagram.com/its._abdulr/" target="_blank"><i class="fa-brands fa-instagram fa-lg"
+                style="color:#ff58a3ea;"></i></a>
+        <a href="https://x.com/Its_AbdulR" target="_blank"><i class="fa-brands fa-twitter fa-lg"
+                style="color: #ff58a3ea;"></i></a>
+        <a href="https://github.com/Its-Coder1" target="_blank"><i class="fa-brands fa-github fa-lg"
+                style="color: #ff58a3ea;"></i></a>
+        <a href="https://www.linkedin.com/in/abdul-rahman-a5ba95353/" target="_blank"><i
+                class="fa-brands fa-linkedin fa-lg" style="color: #ff58a3ea;"></i></a>
+    </footer>
+</body>
+<script>
+    const hamburger = document.querySelector('.fa-bars-staggered');
+    const cross = document.getElementById('cross');
+    const nav = document.querySelector('.navigation');
+
+    cross.style.display = 'none';
+
+    hamburger.addEventListener('click', () => {
+        nav.style.transform = 'translateY(0px)';
+        hamburger.style.display = 'none';
+        cross.style.display = 'block';
+
+        // Show nav links
+        document.querySelectorAll('.navigation a').forEach(link => {
+            link.style.display = 'block';
+            link.style.visibility = 'visible';
+            link.style.opacity = '1';
+        });
+    });
+
+    cross.addEventListener('click', () => {
+        nav.style.transform = 'translateY(-500px)';
+        hamburger.style.display = 'block';
+        cross.style.display = 'none';
+
+        document.querySelectorAll('.navigation a').forEach(link => {
+            link.style.display = 'none';
+            link.style.visibility = 'hidden';
+            link.style.opacity = '0';
+        });
+    });
+
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
+    document.onkeydown = function (e) {
+        if (e.keyCode == 123) { // F12
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && (e.keyCode == 73 || e.keyCode == 74 || e.keyCode == 67)) {
+            return false; // Ctrl+Shift+I / Ctrl+Shift+J / Ctrl+Shift+C
+        }
+        if (e.ctrlKey && (e.keyCode == 85 || e.keyCode == 83)) {
+            return false; // Ctrl+U (View Source) / Ctrl+S (Save)
+        }
+    };
+</script>
+
+</html>

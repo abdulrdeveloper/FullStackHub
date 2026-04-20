@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="I'm Abdul, a front-end web developer who crafts fast, responsive, and animated websites using only HTML and CSS. Explore my projects and design skills.">
+    <title>About Abdul</title>
+    <link rel="shortcut icon" href="../assets/images/AR.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0%;
+            height: 100vh;
+            padding: 0;
+            overflow-x: hidden;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: linear-gradient(90deg, #0b0d11, #141924);
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("../assets/images/freepik__adjust__38386.png");
+            background-size: 100%;
+            /* image apni original size me */
+            background-repeat: repeat;
+            /* choti image repeat hoke poora cover karegi */
+            background-position: center;
+            filter: brightness(0.2);
+            z-index: -10;
+        }
+
+
+        header {
+            display: flex;
+            padding-top: 15px;
+            position: sticky;
+            top: 0%;
+            z-index: 111;
+        }
+
+        .navigation {
+            display: flex;
+            gap: 6px;
+            position: fixed;
+            left: 47.5%;
+            top: 0%;
+            flex-wrap: wrap;
+               padding: 15px 10px;
+            border-bottom-right-radius:30px;
+            border-bottom-left-radius:30px;
+             background-color: rgba(0, 0, 0, 0.385);
+        }
+
+        .navigation a {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.801);
+            text-decoration: none;
+            padding: 6px 18px 9px 18px;
+            transition: all 0.3s ease-in-out;
+            border-radius: 3%;
+            position: relative;
+        }
+
+        .navigation a::before {
+            content: "";
+            position: absolute;
+            width: 60%;
+            top: 85%;
+            left: 20%;
+            bottom: 0;
+            right: 0;
+            height: 5%;
+            transform-origin: center;
+            background: linear-gradient(90deg, #9b64ff, #ff7bb6);
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+
+        }
+
+        .navigation a:hover::before {
+            transform: scaleX(1);
+        }
+
+        .navigation a:hover {
+            background-color: transparent;
+            background: linear-gradient(380deg, #ff4d4d, #ff7bb6, #9b64ff, #5ac8fa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        #aboutacolor {
+            background: linear-gradient(380deg, #ff4d4d, #ff7bb6, #9b64ff, #5ac8fa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .topname {
+            font-size: 31px;
+            font-weight: 700;
+            margin-top: -4px;
+            margin-left: 116px;
+            background: linear-gradient(90deg, #ff4d4d, #ff7bb6, #9b64ff, #5ac8fa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transform: translate(-300px);
+            animation: slideIn 1s ease forwards;
+            cursor: pointer;
+            display: flex;
+        }
+
+        @keyframes slideIn {
+            to {
+                transform: translate(0px);
+            }
+        }
+
+
+        main h1 {
+            font-size: 51px;
+            font-weight: 600;
+            margin-top: 66px;
+            text-align: center;
+            background: linear-gradient(2177deg, #ff4d4d, #ff7bb6, #9b64ff, #5ac8fa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            cursor: auto;
+            text-decoration: none;
+        }
+
+        main a {
+            text-decoration: none;
+            color: transparent;
+        }
+
+        .data {
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            padding-left: -20px;
+            color: rgba(255, 255, 255, 0.9);
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(90, 200, 250, 0.15);
+            backdrop-filter: blur(15px);
+            width: 80%;
+            margin-left: 10%;
+            animation: dataenimate 0.3s ease-in-out forwards;
+        }
+
+        .data ul {
+            line-height: 177%;
+            margin-left: 2%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+
+        }
+
+        main p {
+            color: rgba(255, 255, 255, 0.856);
+            width: 70%;
+            margin-top: 16px;
+            line-height: 30px;
+            text-align: center;
+            animation: dataenimate 0.3s ease-in-out forwards;
+            opacity: 0;
+        }
+
+        @keyframes dataenimate {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translate(0px);
+                opacity: 1;
+            }
+        }
+
+
+        .button1 {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .button1 #animateline {
+            padding: 10px 30px 10px 30px;
+            background-color: transparent;
+            border: 1px solid #ff7bb6;
+            color: #ff7bb6;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 50px;
+            margin-top: -10px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            transition: all 0.1s ease-in-out;
+            position: relative;
+        }
+
+        .button1 #animateline:hover {
+            color: rgba(0, 0, 0, 0.952);
+            background-color: transparent;
+        }
+
+        #animateline::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+            background: linear-gradient(270deg, #9b64ff, #ff7bb6);
+            z-index: -1;
+            transform: scaleX(0);
+            transform-origin: center;
+            /* start animation from left */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        #animateline:hover::before {
+            transform: scaleX(1);
+        }
+
+
+        .humburger i {
+            position: absolute;
+            right: 7%;
+            top: 29px;
+            cursor: pointer;
+            z-index: 99;
+            padding: 7px 1px;
+            transition: all 0.3s ease-in-out;
+            background: linear-gradient(290deg, #ff4d4d, #ff7bb6, #9b64ff, #5ac8fa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 0;
+            display: none;
+            visibility: hidden;
+        }
+
+        .humburger i:hover {
+            transform: scale(1.2) translateY(-1px);
+        }
+
+        @media (max-width: 768px) {
+            .topname {
+                font-size: 26px;
+                margin-left: 20px;
+                margin-top: 6px;
+            }
+
+            .contactacolor {
+                margin-left: -40px;
+                transform: scale(1);
+            }
+
+            .humburger i {
+                visibility: visible;
+                display: block;
+                opacity: 1;
+            }
+
+            .humburger:focus-within .navigation a {
+                display: block;
+                visibility: visible;
+                opacity: 1;
+            }
+
+            .navigation {
+                transition: all 0.4s ease-in-out;
+                z-index: 9;
+                margin-top: 50px;
+                margin-left: -50%;
+                text-align: center;
+                padding: 4px 0px;
+                background-color: hsla(216, 20%, 5%, 0.603);
+                backdrop-filter: blur(10px);
+                box-shadow: 0px 0px 5px #5ac7fafb;
+                transform: translateY(-500px);
+            }
+
+            .humburger:focus-within .navigation {
+                transform: translateY(0px);
+            }
+
+
+            .navigation a {
+                margin-bottom: -6px;
+                transform: scale(1);
+                display: block;
+                width: 100%;
+                padding: 10px 0px;
+                padding-left: 100px;
+                padding-right: 100px;
+                text-align: center;
+            }
+
+            .navigation a {
+                display: none;
+                visibility: hidden;
+                opacity: 0;
+                transition: all 0.3s ease-in-out;
+            }
+
+
+            .topname {
+                font-size: 26px;
+                margin-left: 20px;
+                margin-top: 6px;
+            }
+
+            main h1 {
+                font-size: 36px;
+                margin-top: 40px;
+            }
+
+            main p {
+                width: 90%;
+                font-size: 16px;
+                line-height: 28px;
+                margin-top: 15px;
+
+            }
+
+            .button1 {
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 50px;
+            }
+
+            .button1 #animateline {
+                position: relative;
+                top: auto;
+                left: auto;
+                display: inline-block;
+                margin-bottom: 50px;
+                margin-top: -10px;
+            }
+
+            .data {
+                margin-left: 7%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .data {
+                margin-left: 5%;
+            }
+
+            .topname {
+                font-size: 20px;
+                margin-top: 6px;
+                padding-left: 25px;
+                margin-left: 10px;
+            }
+
+            main h1 {
+                font-size: 28px;
+                margin-top: 35px;
+            }
+
+            main p {
+                font-size: 14px;
+                line-height: 26px;
+                margin-top: 12px;
+                width: 92%;
+            }
+
+            .button1 #animateline {
+                font-size: 18px;
+                padding: 8px 28px;
+                margin-bottom: 50px;
+                margin-top: -10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <span class="topname">Abdul</span>
+        <div class="humburger" tabindex="0"><i class="fa-solid fa-bars-staggered fa-lg" style="color: #9b64ff;"></i>
+            <i id="cross" class="fa-solid fa-xmark fa-xl"></i>
+            <div class="navigation" tabindex="0">
+                <a href="../index.html">Home</a>
+                <a id="aboutacolor" href="about.html">About</a>
+                <a href="service.html">Service</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="resume.html">Resume</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1>About Me</h1>
+       <main>
+    <div class="data">
+        <p>
+            I'm <strong>Abdul Rahman</strong>, a passionate <strong>Front-End Web Developer</strong>, 
+            <strong>Graphic Designer</strong>, and an aspiring <strong>Flutter Developer</strong> with 
+            over <strong>1 year</strong> of hands-on experience in crafting digital solutions. 
+        </p>
+        <ul>
+            <li>Skilled in <strong>HTML</strong>, <strong>CSS</strong>, and <strong>responsive design</strong> 
+                to build websites that work seamlessly across all devices.</li>
+            <li>Currently learning and building projects with <strong>JavaScript</strong> to strengthen 
+                problem-solving and add interactivity.</li>
+            <li>Familiar with <strong>Flutter</strong> for creating modern, cross-platform mobile applications.</li>
+            <li>Experienced in <strong>Photoshop</strong> and <strong>Canva</strong> for producing creative 
+                and professional visual designs.</li>
+        </ul>
+        <p>
+            I actively use deployment and workflow tools like <strong>Vercel</strong>, <strong>Netlify</strong>, 
+            and <strong>Formspree</strong> to host, manage, and integrate forms into my projects. 
+            These tools help me deliver fast, reliable, and scalable web experiences.
+        </p>
+        <p>
+            With a strong eye for design and a continuous learning mindset, I aim to bridge the gap between 
+            creativity and technology. Whether it's <strong>developing websites</strong>, 
+            <strong>designing graphics</strong>, or <strong>exploring new frameworks</strong>, 
+            I’m always excited to collaborate and take on challenges that push my skills to the next level.
+        </p>
+    </div>
+</main>
+
+
+    </main>
+
+    <footer>
+        <div class="button1">
+            <a id="animateline" href="contact.html"> Hire Me <i class="fa-solid fa-briefcase"></i></a>
+        </div>
+    </footer>
+</body>
+<script>
+    const hamburger = document.querySelector('.fa-bars-staggered');
+    const cross = document.getElementById('cross');
+    const nav = document.querySelector('.navigation');
+
+    // Initial state
+    cross.style.display = 'none';
+
+    hamburger.addEventListener('click', () => {
+        nav.style.transform = 'translateY(0px)';
+        hamburger.style.display = 'none';
+        cross.style.display = 'block';
+
+        // Show nav links
+        document.querySelectorAll('.navigation a').forEach(link => {
+            link.style.display = 'block';
+            link.style.visibility = 'visible';
+            link.style.opacity = '1';
+        });
+    });
+
+    cross.addEventListener('click', () => {
+        nav.style.transform = 'translateY(-500px)';
+        hamburger.style.display = 'block';
+        cross.style.display = 'none';
+
+        // Hide nav links
+        document.querySelectorAll('.navigation a').forEach(link => {
+            link.style.display = 'none';
+            link.style.visibility = 'hidden';
+            link.style.opacity = '0';
+        });
+    });
+
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
+    // Disable common DevTools shortcuts
+    document.onkeydown = function (e) {
+        if (e.keyCode == 123) { // F12
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && (e.keyCode == 73 || e.keyCode == 74 || e.keyCode == 67)) {
+            return false; // Ctrl+Shift+I / Ctrl+Shift+J / Ctrl+Shift+C
+        }
+        if (e.ctrlKey && (e.keyCode == 85 || e.keyCode == 83)) {
+            return false; // Ctrl+U (View Source) / Ctrl+S (Save)
+        }
+    };
+</script>
+
+</html>

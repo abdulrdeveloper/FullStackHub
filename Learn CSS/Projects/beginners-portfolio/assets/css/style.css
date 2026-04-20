@@ -1,0 +1,439 @@
+body {
+    margin: 0%;
+    height: 100vh;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: linear-gradient(90deg, #0b0d11, #141924);
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/freepik__adjust__38386.png");
+    background-size: 100%;
+    /* image apni original size me */
+    background-repeat: repeat;
+    /* choti image repeat hoke poora cover karegi */
+    background-position: center;
+    filter: brightness(0.2);
+    z-index: -10;
+}
+
+
+header {
+    display: flex;
+    padding-top: 15px;
+    position: sticky;
+    top: 0%;
+    z-index: 111;
+}
+
+.navigation {
+    display: flex;
+    gap: 6px;
+    position: fixed;
+    left: 47.5%;
+    top: 0%;
+    flex-wrap: wrap;
+    padding: 15px 10px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color:rgba(0, 0, 0, 0.212);
+}
+
+.navigation a {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.801);
+    text-decoration: none;
+    padding: 6px 18px 9px 18px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 3%;
+    position: relative;
+}
+
+.navigation a::before {
+    content: "";
+    position: absolute;
+    width: 60%;
+    top: 85%;
+    left: 20%;
+    bottom: 0;
+    right: 0;
+    height: 5%;
+    transform-origin: center;
+    background: linear-gradient(90deg, #9b64ff, #ff7bb6);
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.navigation a:hover::before {
+    transform: scaleX(1);
+}
+
+.navigation a:hover {
+    background-color: transparent;
+    background: linear-gradient(380deg, #ff4d4d, #ff7bb6, #9b64ff, #5ac8fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#homeacolor {
+    background: linear-gradient(380deg, #ff4d4d, #ff7bb6, #9b64ff, #5ac8fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.topname {
+    font-size: 31px;
+    font-weight: 700;
+    margin-top: -4px;
+    margin-left: 116px;
+    background: linear-gradient(90deg, #ff4d4d, #ff7bb6, #9b64ff, #5ac8fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translate(-300px);
+    animation: slideIn 1s ease forwards;
+    cursor: pointer;
+    display: flex;
+}
+
+@keyframes slideIn {
+    to {
+        transform: translate(0px);
+    }
+}
+
+#abdulpic {
+    position: absolute;
+    top: 20.5%;
+    right: 10%;
+    border-radius: 50%;
+    width: 28%;
+    height: auto;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid #ff7bb6;
+    box-shadow: 0px 0px 1px transparent,
+        0px 0px 1px transparent,
+        0px 0px 1px transparent,
+        0px 0px 130px #ff7bb6;
+    transition: all 0.3s ease-in-out;
+    animation: lowhigh 4s ease infinite alternate;
+}
+
+
+#abdulpic:focus {
+    border-radius: 3%;
+    transform: scale(1);
+    opacity: 0.8;
+    cursor: pointer;
+    box-shadow: 0px 0px 1px transparent,
+        0px 0px 1px transparent,
+        0px 0px 1px transparent,
+        0px 0px 150px #ff7bb6c5;
+}
+
+.data h1 {
+    font-size: 31px;
+    font-weight: 700;
+    position: absolute;
+    top: 24.5%;
+    left: 8%;
+    background: linear-gradient(2681deg, #ff4d4d, #ff7bb6, #9b64ff, #5ac8fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: auto;
+    display: flex;
+}
+
+.data h2 {
+    font-size: 51px;
+    font-weight: 500;
+    position: absolute;
+    top: 28%;
+    left: 8%;
+    background: linear-gradient(2681deg, #ff4d4d, #ff7bb6, #9b64ff, #5ac8fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: auto;
+    display: flex;
+}
+
+.data p {
+    color: rgba(255, 255, 255, 0.856);
+    width: 44%;
+    font-weight: 400;
+    position: absolute;
+    top: 44.5%;
+    left: 8%;
+    line-height: 26px;
+    display: flex;
+    flex-wrap: wrap;
+    animation: paragraphenimate 0.3s ease-in-out forwards;
+}
+
+@keyframes paragraphenimate {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+
+.bothbuttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    position: absolute;
+    top: 65%;
+    left: 12%;
+}
+
+.bothbuttons div {
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+.button a {
+    padding: 10px 30px 10px 30px;
+    background: linear-gradient(90deg, #9b64ff, #ff7bb6);
+    color: rgba(0, 0, 0, 0.973);
+    border-radius: 50px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.button:hover {
+    transform: translateY(-4px);
+}
+
+.button:hover a {
+    background: linear-gradient(360deg, #9b64ff, #ff7bb6);
+}
+
+.button1 #animateline {
+    padding: 10px 30px 10px 30px;
+    background-color: transparent;
+    border: 1px solid #ff7bb6;
+    color: #ff7bb6;
+    position: absolute;
+    left: 0%;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 17px;
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    transition: all 0.1s ease-in-out;
+}
+
+.button1 #animateline:hover {
+    color: rgba(0, 0, 0, 0.952);
+    background-color: transparent;
+}
+
+#animateline::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background: linear-gradient(270deg, #9b64ff, #ff7bb6);
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: center;
+    /* start animation from left */
+    transition: transform 0.3s ease-in-out;
+}
+
+#animateline:hover::before {
+    transform: scaleX(1);
+}
+
+footer {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 74%;
+    left: 18%;
+}
+
+footer a {
+    transition: all 0.3s ease-in-out;
+    background: linear-gradient(2681deg, #ff4d4d, #ff7bb6, #9b64ff, #5ac8fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: none;
+}
+
+footer a:hover {
+    transform: scale(1.5);
+}
+
+.humburger i {
+    position: absolute;
+    right: 7%;
+    top: 29px;
+    cursor: pointer;
+    z-index: 99;
+    padding: 7px 1px;
+    transition: all 0.3s ease-in-out;
+    background: linear-gradient(290deg, #ff4d4d, #ff7bb6, #9b64ff, #5ac8fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    display: none;
+    visibility: hidden;
+}
+
+.humburger i:hover {
+    transform: scale(1.2) translateY(-1px);
+}
+
+
+@media (max-width: 900px) {
+    .navigation .contactacolor {
+        margin-left: -40px;
+    }
+
+    .humburger i {
+        visibility: visible;
+        display: block;
+        opacity: 1;
+    }
+
+    .humburger:focus-within .navigation a {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .navigation {
+        transition: all 0.4s ease-in-out;
+        z-index: 9;
+        margin-top: 50px;
+        margin-left: -50%;
+        text-align: center;
+        padding: 4px 0px;
+        background-color: hsla(216, 20%, 5%, 0.761);
+        backdrop-filter: blur(10px);
+        box-shadow: 0px 0px 5px #5ac7fafb;
+        transform: translateY(-500px);
+    }
+
+    .humburger:focus-within .navigation {
+        transform: translateY(0px);
+    }
+    .navigation a {
+        margin-bottom: -6px;
+        transform: scale(1);
+        display: block;
+        width: 100%;
+        padding: 10px 0px;
+        padding-left: 100px;
+        padding-right: 100px;
+        text-align: center;
+    }
+    .navigation a {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+    }
+
+
+
+    #abdulpic {
+        position: static;
+        margin: 30px auto;
+        display: block;
+        width: 45%;
+        animation: none;
+        margin-bottom: 60px;
+    }
+
+    .data h1,
+    .data h2,
+    .data p {
+        position: static;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 80%;
+    }
+
+    .data h1 {
+        margin-left: 30px;
+    }
+
+    .data h2 {
+        font-size: 40px;
+    }
+
+    .data p {
+        width: 70%;
+        margin-left: 17%;
+        line-height: 22px;
+    }
+
+    .bothbuttons {
+        position: static;
+        justify-content: center;
+        margin-top: 45px;
+    }
+
+    footer {
+        position: static;
+        justify-content: center;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    .button a,
+    .button1 #animateline {
+        font-size: 17px;
+    }
+
+
+    @media (max-width: 576px) {
+        .topname {
+            font-size: 20px;
+            margin-top: 6px;
+            padding-left: 25px;
+            margin-left: 10px;
+        }
+
+        .data h2 {
+            font-size: 28px;
+            margin-left: 10px;
+        }
+
+        .data p {
+            font-size: 15px;
+            line-height: 22px;
+        }
+
+        .button a,
+        .button1 #animateline {
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+    }
+}

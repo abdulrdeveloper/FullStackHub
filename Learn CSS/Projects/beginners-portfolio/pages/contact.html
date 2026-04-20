@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="I'm Abdul, a front-end web developer who crafts fast, responsive, and animated websites using only HTML and CSS. Explore my projects and design skills.">
+    <title>Contact with Abdul</title>
+    <link rel="shortcut icon" href="../assets/images/AR.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0%;
+            height: 100vh;
+            overflow-x: hidden;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: linear-gradient(90deg, #0b0d11, #141924);
+        }
+
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("../assets/images/freepik__adjust__38386.png");
+            background-size: 100%;
+            /* image apni original size me */
+            background-repeat: repeat;
+            /* choti image repeat hoke poora cover karegi */
+            background-position: center;
+            filter: brightness(0.1);
+            z-index: -10;
+        }
+
+
+        header {
+            display: flex;
+            padding-top: 15px;
+
+            z-index: 111;
+        }
+
+        .navigation {
+            display: flex;
+            gap: 6px;
+            position: fixed;
+            left: 47.5%;
+            top: 0%;
+            flex-wrap: wrap;
+            padding: 15px 10px;
+            border-bottom-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+            background-color: rgba(0, 0, 0, 0.212);
+        }
+
+        .navigation a {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.801);
+            text-decoration: none;
+            padding: 6px 18px 9px 18px;
+            transition: all 0.3s ease-in-out;
+            border-radius: 3%;
+            position: relative;
+        }
+
+        .navigation a::before {
+            content: "";
+            position: absolute;
+            width: 60%;
+            top: 85%;
+            left: 20%;
+            bottom: 0;
+            right: 0;
+            height: 5%;
+            transform-origin: center;
+            background: linear-gradient(90deg, #9b64ff, #ff7bb6);
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+
+        }
+
+        .navigation a:hover::before {
+            transform: scaleX(1);
+        }
+
+        .navigation a:hover {
+            background-color: transparent;
+            background: linear-gradient(380deg, #ff4d4d, #ff7bb6, #9b64ff, #5ac8fa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        #contactacolor {
+            background: linear-gradient(380deg, #ff4d4d, #ff7bb6, #9b64ff, #5ac8fa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .topname {
+            font-size: 31px;
+            font-weight: 700;
+            margin-top: -4px;
+            margin-left: 116px;
+            background: linear-gradient(90deg, #ff4d4d, #ff7bb6, #9b64ff, #5ac8fa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transform: translate(-300px);
+            animation: slideIn 1s ease forwards;
+            cursor: pointer;
+            display: flex;
+        }
+
+        @keyframes slideIn {
+            to {
+                transform: translate(0px);
+            }
+        }
+
+        main span {
+
+            font-size: 51px;
+            font-weight: 600;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(2177deg, #ff4d4d, #ff7bb6, #9b64ff, #5ac8fa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            cursor: auto;
+            text-decoration: none;
+        }
+
+        main a {
+
+            text-decoration: none;
+            color: transparent;
+        }
+
+        p {
+            width: 50%;
+            color: rgba(255, 255, 255, 0.89);
+            font-size: 16px;
+            line-height: 23px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: absolute;
+            left: 25%;
+            animation: paragraphenimate 0.3s ease-in-out forwards;
+        }
+
+        @keyframes paragraphenimate {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translate(0px);
+                opacity: 1;
+            }
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .boxdiv1 {
+            position: relative;
+            width: 100%;
+        }
+
+        .box {
+            background: none;
+            margin-bottom: 4px;
+            padding: 4px 10px 4px 10px;
+            border-top-color: transparent;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            border-bottom-color: #ff7bb6;
+            width: 80%;
+            color: rgba(255, 255, 255, 0.897);
+            background-color: transparent;
+            font-size: 16px;
+            font-weight: 500;
+            outline: none;
+            transition: all 0.3s ease-in-out;
+            margin-top: 19px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .bothbox {
+            margin-top: 90px;
+            width: 100%;
+        }
+
+        .bothbox label {
+            position: absolute;
+            top: 20px;
+            left: 1%;
+            font-size: 20px;
+            font-weight: 600;
+            cursor: text;
+            background: linear-gradient(2177deg, #ff4d4d, #ff7bb6, #9b64ff, #5ac8fa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            z-index: -1;
+            transition: all 0.2s ease-in-out;
+        }
+
+        #label3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            background: linear-gradient(2177deg, #ff4d4d, #ff7bb6, #9b64ff, #5ac8fa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            z-index: 0;
+            transition: all 0.2s ease-in-out;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .boxdiv1:focus-within label,
+        .boxdiv1 input:not(:placeholder-shown)+label {
+            transform: translate(-10px, -22px);
+            font-size: 16px;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            transition: all 0.3s ease-in-out;
+        }
+
+      
+        .button1 {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .button1 #animateline {
+            padding: 10px 30px 10px 30px;
+            overflow: hidden;
+            cursor: pointer;
+            background: linear-gradient(270deg, #9b64ff, #ff7bb6);
+            border: 1px solid #ff7bb6;
+            color:#0b0d11;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 50px;
+            margin-top: -10px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            transition: all 0.1s ease-in-out;
+            position: relative;
+        }
+
+        .button1 #animateline:hover {
+            transform: translateY(-5px);
+           box-shadow: 0px 0px 10px #ff7bb6;
+           background: linear-gradient(180deg, #9b64ff, #ff7bb6);
+        }
+
+
+
+        #sociallink {
+            display: flex;
+            gap: 17px;
+            margin-top: -6px;
+            margin-bottom: 30px;
+        }
+
+        #sociallink a {
+            transition: all 0.3s ease-in-out;
+            background: linear-gradient(2681deg, #ff4d4d, #ff7bb6, #9b64ff, #5ac8fa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            border: none;
+        }
+
+        #sociallink a:hover {
+            transform: scale(1.5);
+        }
+
+        textarea {
+            background-color: #1217229a;
+            box-shadow: 0px 0px 1px #ff7bb6,
+                0px 0px 2px #0b0d11,
+                0px 0px 3px #0b0d11,
+                2px 2px 8px #ff7bb6,
+                -2px -2px 8px #ff7bb6;
+            border: none;
+            outline: none;
+            color: rgba(255, 255, 255, 0.89);
+            font-size: 20px;
+            resize: both;
+            width: 80%;
+            max-width: 650px;
+            min-height: 280px;
+            letter-spacing: 0px;
+            border-radius: 20px;
+            padding: 15px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+
+        }
+
+        .humburger i {
+            position: absolute;
+            right: 7%;
+            top: 29px;
+            cursor: pointer;
+            z-index: 99;
+            padding: 7px 1px;
+            transition: all 0.3s ease-in-out;
+            background: linear-gradient(290deg, #ff4d4d, #ff7bb6, #9b64ff, #5ac8fa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 0;
+            display: none;
+            visibility: hidden;
+        }
+
+        .humburger i:hover {
+            transform: scale(1.2) translateY(-1px);
+        }
+
+        @media (max-width: 768px) {
+            .topname {
+                font-size: 26px;
+                margin-left: 20px;
+                margin-top: 6px;
+            }
+
+            .contactacolor {
+                margin-left: -40px;
+                transform: scale(1);
+            }
+
+            .humburger i {
+                visibility: visible;
+                display: block;
+                opacity: 1;
+            }
+
+            .humburger:focus-within .navigation a {
+                display: block;
+                visibility: visible;
+                opacity: 1;
+            }
+
+
+            .navigation {
+                transition: all 0.4s ease-in-out;
+                z-index: 9;
+                margin-top: 50px;
+                margin-left: -50%;
+                text-align: center;
+                padding: 4px 0px;
+                background-color: hsla(216, 20%, 5%, 0.603);
+                backdrop-filter: blur(10px);
+                box-shadow: 0px 0px 5px #5ac7fafb;
+                transform: translateY(-500px);
+            }
+
+            .humburger:focus-within .navigation {
+                transform: translateY(0px);
+            }
+
+
+
+
+            .navigation a {
+                margin-bottom: -6px;
+                transform: scale(1);
+                display: block;
+                width: 100%;
+                padding: 10px 0px;
+                padding-left: 100px;
+                padding-right: 100px;
+                text-align: center;
+            }
+
+
+
+            .navigation a {
+                display: none;
+                visibility: hidden;
+                opacity: 0;
+                transition: all 0.3s ease-in-out;
+            }
+
+            .box {
+                width: 90%;
+            }
+
+            .bothbox label {
+                left: 5%;
+            }
+
+            textarea {
+                margin-top: 15px;
+                width: 90%;
+                margin-bottom: 25px;
+            }
+
+            p {
+                width: 90%;
+                left: 5%;
+                font-size: 15px;
+                padding: 0 10px;
+            }
+        }
+
+        .button1 #animateline {
+            font-size: 17px;
+        }
+
+        @media (max-width: 576px) {
+            .topname {
+                font-size: 20px;
+                margin-top: 6px;
+                padding-left: 25px;
+            }
+
+
+            main span {
+                font-size: 32px;
+            }
+
+            .box {
+                width: 95%;
+            }
+
+            .bothbox label {
+                left: 5%;
+                font-size: 18px;
+            }
+
+            textarea {
+                width: 95%;
+            }
+
+            .button1 #animateline {
+                font-size: 16px;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+
+<header>
+    <span class="topname">Abdul</span>
+    <div class="humburger" tabindex="0">
+        <i class="fa-solid fa-bars-staggered fa-lg" style="color: #9b64ff;"></i>
+        <i id="cross" class="fa-solid fa-xmark fa-xl"></i>
+        <div class="navigation" tabindex="0">
+            <a href="../index.html" tabindex="0">Home</a>
+            <a href="about.html" tabindex="0">About</a>
+            <a href="service.html" tabindex="0">Service</a>
+            <a href="portfolio.html" tabindex="0">Portfolio</a>
+            <a id="resumeacolor" href="resume.html" tabindex="0">Resume</a>
+            <a href="blog.html" tabindex="0">Blog</a>
+            <a id="contactacolor" href="contact.html" tabindex="0">Contact</a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <form action="https://formspree.io/f/xanjgdep" method="POST">
+
+        <span>Get in Touch</span>
+
+        <p class="headingparagraph">
+            Need a website or front-end help? I build fast, responsive sites — drop your message and let’s create
+            something great!
+        </p>
+        <div class="bothbox" tabindex="0">
+
+            <div class="boxdiv1">
+                <input type="text" name="name" class="box" pattern="[A-Za-z\s]{3,30}"
+                    title="Name must be 3-30 letters only" placeholder=" " tabindex="0" required>
+                <label id="label1" tabindex="0">Enter Name</label>
+            </div>
+
+            <div class="boxdiv1">
+                <input type="email" placeholder=" " name="email" class="box" tabindex="0" required
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Enter a valid email address">
+                <label id="label2" tabindex="0">Enter Mail</label>
+            </div>
+        </div>
+
+        <div class="textareacomplete">
+            <label id="label3" tabindex="0">Enter Message</label>
+            <textarea id="textarea" rows="5" required name="message" pattern=".{10,}"
+                title="Message must be at least 10 characters"></textarea>
+        </div>
+        <div style="text-align:center;  margin:20px 0;">
+            <h3 style=" background: linear-gradient(2169deg, #ff4d4d, #ff7bb6, #9b64ff, #5ac8fa);
+                     -webkit-background-clip: text;
+                     -webkit-text-fill-color: transparent; font-size:24px;"><i
+                    class="fa-solid fa-location-dot fa-sm"></i>
+                My Location</h3>
+            <div style="
+                border: 2px solid #ff7bb6;
+                border-radius: 12px;
+                overflow: hidden;
+                width: 90%;
+                max-width: 750px;
+                margin: 10px auto;
+                margin-top: -10px;
+                margin-bottom: 30px;
+                background:#0b0d11;
+                box-shadow: 0 0 12px rgba(255,123,182,0.4);">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108651.77500515297!2d74.25987524999999!3d31.5203699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190483eaa6b9a5%3A0x5a7b33eaaa3d92d2!2sGulberg%2C%20Lahore!5e0!3m2!1sen!2s!4v1699900000000!5m2!1sen!2s"
+                    width="100%" height="160" style="border:none; display:block; background:#0b0d11;" allowfullscreen
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="button1">
+                <button id="animateline" type="submit">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+
+    </form>
+    </div>
+</main>
+<footer>
+
+    <div id="sociallink">
+        <a href="https://www.facebook.com/abdul.rahman.585923/followers" target="_blank"><i
+                class="fa-brands fa-facebook-f fa-lg" style="color:#ff58a3ea;"></i></a>
+        <a href="https://www.instagram.com/its._abdulr/" target="_blank"><i class="fa-brands fa-instagram fa-lg"
+                style="color:#ff58a3ea;"></i></a>
+        <a href="https://x.com/Its_AbdulR" target="_blank"><i class="fa-brands fa-twitter fa-lg"
+                style="color: #ff58a3ea;"></i></a>
+        <a href="https://github.com/Its-Coder1" target="_blank"><i class="fa-brands fa-github fa-lg"
+                style="color: #ff58a3ea;"></i></a>
+        <a href="https://www.linkedin.com/in/abdul-rahman-a5ba95353/" target="_blank"><i
+                class="fa-brands fa-linkedin fa-lg" style="color: #ff58a3ea;"></i></a>
+    </div>
+</footer>
+
+
+</body>
+<script>
+    const hamburger = document.querySelector('.fa-bars-staggered');
+    const cross = document.getElementById('cross');
+    const nav = document.querySelector('.navigation');
+
+    // Initial state
+    cross.style.display = 'none';
+
+    hamburger.addEventListener('click', () => {
+        nav.style.transform = 'translateY(0px)';
+        hamburger.style.display = 'none';
+        cross.style.display = 'block';
+
+        // Show nav links
+        document.querySelectorAll('.navigation a').forEach(link => {
+            link.style.display = 'block';
+            link.style.visibility = 'visible';
+            link.style.opacity = '1';
+        });
+    });
+
+    cross.addEventListener('click', () => {
+        nav.style.transform = 'translateY(-500px)';
+        hamburger.style.display = 'block';
+        cross.style.display = 'none';
+
+        // Hide nav links
+        document.querySelectorAll('.navigation a').forEach(link => {
+            link.style.display = 'none';
+            link.style.visibility = 'hidden';
+            link.style.opacity = '0';
+        });
+    });
+
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
+    // Disable common DevTools shortcuts
+    document.onkeydown = function (e) {
+        if (e.keyCode == 123) { // F12
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && (e.keyCode == 73 || e.keyCode == 74 || e.keyCode == 67)) {
+            return false; // Ctrl+Shift+I / Ctrl+Shift+J / Ctrl+Shift+C
+        }
+        if (e.ctrlKey && (e.keyCode == 85 || e.keyCode == 83)) {
+            return false; // Ctrl+U (View Source) / Ctrl+S (Save)
+        }
+    };
+</script>
+
+
+</html>

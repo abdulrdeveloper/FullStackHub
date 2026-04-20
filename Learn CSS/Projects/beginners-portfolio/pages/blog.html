@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="I'm Abdul, a front-end web developer who crafts fast, responsive, and animated websites using only HTML and CSS. Explore my projects and design skills.">
+  <title>Blogs by Abdul</title>
+  <link rel="shortcut icon" href="../assets/images/AR.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0%;
+      height: 100vh;
+      padding: 0;
+      overflow-x: hidden;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(90deg, #0b0d11, #141924);
+    }
+
+   
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/images/freepik__adjust__38386.png");
+    background-size: 100%;
+    /* image apni original size me */
+    background-repeat: repeat;
+    /* choti image repeat hoke poora cover karegi */
+    background-position: center;
+    filter: brightness(0.2);
+    z-index: -10;
+}
+
+
+header {
+    display: flex;
+    padding-top: 15px;
+    position: sticky;
+    top: 0%;
+    z-index: 111;
+}
+
+.navigation {
+    display: flex;
+    gap: 6px;
+    position: fixed;
+    left: 47.5%;
+    top: 0%;
+    flex-wrap: wrap;
+    padding: 15px 10px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color:rgba(0, 0, 0, 0.212);
+}
+
+.navigation a {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.801);
+    text-decoration: none;
+    padding: 6px 18px 9px 18px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 3%;
+    position: relative;
+}
+
+.navigation a::before {
+    content: "";
+    position: absolute;
+    width: 60%;
+    top: 85%;
+    left: 20%;
+    bottom: 0;
+    right: 0;
+    height: 5%;
+    transform-origin: center;
+    background: linear-gradient(90deg, #9b64ff, #ff7bb6);
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.navigation a:hover::before {
+    transform: scaleX(1);
+}
+
+.navigation a:hover {
+    background-color: transparent;
+    background: linear-gradient(380deg, #ff4d4d, #ff7bb6, #9b64ff, #5ac8fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#blogacolor {
+    background: linear-gradient(380deg, #ff4d4d, #ff7bb6, #9b64ff, #5ac8fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.topname {
+    font-size: 31px;
+    font-weight: 700;
+    margin-top: -4px;
+    margin-left: 116px;
+    background: linear-gradient(90deg, #ff4d4d, #ff7bb6, #9b64ff, #5ac8fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translate(-300px);
+    animation: slideIn 1s ease forwards;
+    cursor: pointer;
+    display: flex;
+}
+
+@keyframes slideIn {
+    to {
+        transform: translate(0px);
+    }
+}
+
+    main span {
+      font-size: 51px;
+      font-weight: 600;
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(2177deg, #ff4d4d, #ff7bb6, #9b64ff, #5ac8fa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      cursor: auto;
+      text-decoration: none;
+    }
+
+    main a {
+      text-decoration: none;
+      color: transparent;
+    }
+
+
+    p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 10px auto;
+      width: 70%;
+      color: rgba(255, 255, 255, 0.89);
+      font-size: 16px;
+      line-height: 23px;
+      animation: paragraphenimate 0.3s ease-in-out forwards;
+    }
+
+    @keyframes paragraphenimate {
+      from {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+
+      to {
+        transform: translate(0px);
+        opacity: 1;
+      }
+    }
+
+    .allpics img {
+      display: flex;
+      width: 40%;
+      height: auto;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+    }
+
+    .allpics h2 {
+      background: linear-gradient(2177deg, #ff4d4d, #ff7bb6, #9b64ff, #5ac8fa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+    }
+
+    hr {
+      width: 40%;
+    }
+
+    .picsofblog {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      border-radius: 4%;
+      transition: all 0.3s ease-in-out;
+    }
+
+    img {
+      border: 1px solid #9b64ff;
+    }
+
+    img:focus {
+      transform: scale(1.15);
+      z-index: 2;
+    }
+
+    .bothbuttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 2%;
+      padding-bottom: 2%;
+    }
+
+    .bothbuttons div {
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+.button a {
+    padding: 10px 30px 10px 30px;
+    background: linear-gradient(90deg, #9b64ff, #ff7bb6);
+    color: rgba(0, 0, 0, 0.973);
+    border-radius: 50px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.button:hover {
+    transform: translateY(-4px);
+}
+
+.button:hover a {
+    background: linear-gradient(360deg, #9b64ff, #ff7bb6);
+}
+
+   .button1 #animateline {
+    padding: 10px 30px 10px 30px;
+    background-color: transparent;
+    border: 1px solid #ff7bb6;
+    color: #ff7bb6;
+    position: absolute;
+    left: 0%;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 17px;
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    transition: all 0.1s ease-in-out;
+}
+
+.button1 #animateline:hover {
+    color: rgba(0, 0, 0, 0.952);
+    background-color: transparent;
+}
+
+#animateline::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background: linear-gradient(270deg, #9b64ff, #ff7bb6);
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: center;
+    /* start animation from left */
+    transition: transform 0.3s ease-in-out;
+}
+
+
+    #animateline:hover::before {
+      transform: scaleX(1);
+    }
+
+
+    .humburger i {
+      position: absolute;
+      right: 7%;
+      top: 29px;
+      cursor: pointer;
+      z-index: 99;
+      padding: 7px 1px;
+      transition: all 0.3s ease-in-out;
+      background: linear-gradient(290deg, #ff4d4d, #ff7bb6, #9b64ff, #5ac8fa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      opacity: 0;
+      display: none;
+      visibility: hidden;
+    }
+
+    .humburger i:hover {
+      transform: scale(1.2) translateY(-1px);
+    }
+
+    @media (max-width: 768px) {
+      .topname {
+        font-size: 26px;
+        margin-left: 0px;
+        margin-top: 6px;
+      }
+
+      .contactacolor {
+        margin-left: -40px;
+        transform: scale(1);
+      }
+
+      .humburger i {
+        visibility: visible;
+        display: block;
+        opacity: 1;
+      }
+
+      .humburger:focus-within .navigation a {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .humburger:focus-within .navigation {
+        transform: translateX(0px);
+        animation: slideToRight 0.4s forwards;
+      }
+
+      .navigation {
+        transition: all 0.4s ease-in-out;
+        z-index: 9;
+        margin-top: 50px;
+        margin-left: -50%;
+        text-align: center;
+        padding: 4px 0px;
+        background-color: hsla(216, 20%, 5%, 0.603);
+        backdrop-filter: blur(10px);
+        box-shadow: 0px 0px 5px #5ac7fafb;
+        transform: translateY(-500px);
+      }
+
+      .humburger:focus-within .navigation {
+        transform: translateY(0px);
+      }
+
+      .navigation a {
+        margin-bottom: -6px;
+        transform: scale(1);
+        display: block;
+        width: 100%;
+        padding: 10px 0px;
+        padding-left: 100px;
+        padding-right: 100px;
+        text-align: center;
+      }
+      .navigation a {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+      }
+
+
+      .topname {
+        font-size: 26px;
+        margin-left: 20px;
+        margin-top: 6px;
+      }
+
+      main span {
+        font-size: 36px;
+        text-align: center;
+        margin: 20px;
+      }
+
+      .headingparagraph {
+        margin: auto;
+        width: 80%;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      .allpics img,
+      .allpics h2,
+      hr {
+        width: 90%;
+      }
+
+      .bothbuttons {
+        flex-direction: row;
+        gap: 15px;
+        margin-top: 30px;
+        padding-bottom: 20px;
+      }
+
+      .button a,
+      .button1 #animateline {
+        font-size: 17px;
+        
+      }
+    }
+
+    @media (max-width: 576px) {
+      .topname {
+        font-size: 20px;
+        margin-top: 6px;
+        padding-left: 25px;
+      }
+
+      main span {
+        font-size: 28px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      .button a,
+      .button1 #animateline {
+        font-size: 16px;
+        padding: 10px 20px;
+      }
+
+      .bothbuttons {
+        margin-top: 30px;
+        padding-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <span class="topname">Abdul</span>
+    <div class="humburger" tabindex="0"><i class="fa-solid fa-bars-staggered fa-lg" style="color: #9b64ff;"></i>
+      <i id="cross" class="fa-solid fa-xmark fa-xl"></i>
+      <div class="navigation" tabindex="0">
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="service.html">Service</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="resume.html">Resume</a>
+        <a id="blogacolor" href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+<br>
+    <span>Blog</span>
+    <p class="headingparagraph">
+      Welcome to my blog section! While there aren't any posts here yet, I'm actively working on publishing exciting and
+      valuable content very soon. Stay tuned — I'm building something useful where I’ll share my journey, tips,
+      tutorials, and experiences in web development and design.
+    </p>
+
+    <div class="allpics" tabindex="0">
+      <h2>Web Development Journey</h2>
+      <div class="picsofblog">
+        <img class="blogpic" src="../assets/images/blog1.jpg" alt="Blog Website Demo" tabindex="0">
+        <img class="blogpic" src="../assets/images/blog2.jpg" alt="Blog Website Demo" tabindex="0">
+        <img class="blogpic" src="../assets/images/blog3.jpg" alt="Blog Website Demo" tabindex="0">
+      </div>
+      <p>
+        This blog design is a preview of what’s coming! I'm currently working on writing and publishing content related
+        to web development, coding tips, and real-world projects. Stay tuned — exciting posts are on the way!
+      </p>
+      <hr>
+
+      <h2>Business Blog Android App</h2>
+      <div class="picsofblog">
+        <img src="../assets/images/blogwebsite.jpg" alt="Business Blog Website" tabindex="0">
+        <img src="../assets/images/blogapp.jpg" alt="Android App Version" tabindex="0">
+      </div>
+      <p>This business-focused blog website, featuring modern startup and money-making ideas, was converted
+        into an Android app using Flutter. The app includes AdMob ads, a splash screen, and a clean release
+        APK ready to publish.</p>
+      <hr>
+    </div>
+  </main>
+
+  <footer>
+    <div class="bothbuttons">
+      <div class="button">
+        <a href="https://dev.to/" target="_blank">Explore Blogs <i class="fa-solid fa-blog"></i></a>
+      </div>
+      <div class="button1">
+        <a id="animateline" href="contact.html">Hire Me <i class="fa-solid fa-briefcase"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+<script>
+  const hamburger = document.querySelector('.fa-bars-staggered');
+  const cross = document.getElementById('cross');
+  const nav = document.querySelector('.navigation');
+
+  // Initial state
+  cross.style.display = 'none';
+
+  hamburger.addEventListener('click', () => {
+    nav.style.transform = 'translateY(0px)';
+    hamburger.style.display = 'none';
+    cross.style.display = 'block';
+
+    // Show nav links
+    document.querySelectorAll('.navigation a').forEach(link => {
+      link.style.display = 'block';
+      link.style.visibility = 'visible';
+      link.style.opacity = '1';
+    });
+  });
+
+  cross.addEventListener('click', () => {
+    nav.style.transform = 'translateY(-500px)';
+    hamburger.style.display = 'block';
+    cross.style.display = 'none';
+
+    // Hide nav links
+    document.querySelectorAll('.navigation a').forEach(link => {
+      link.style.display = 'none';
+      link.style.visibility = 'hidden';
+      link.style.opacity = '0';
+    });
+  });
+
+  document.addEventListener('contextmenu', event => event.preventDefault());
+
+  // Disable common DevTools shortcuts
+  document.onkeydown = function (e) {
+    if (e.keyCode == 123) { // F12
+      return false;
+    }
+    if (e.ctrlKey && e.shiftKey && (e.keyCode == 73 || e.keyCode == 74 || e.keyCode == 67)) {
+      return false; // Ctrl+Shift+I / Ctrl+Shift+J / Ctrl+Shift+C
+    }
+    if (e.ctrlKey && (e.keyCode == 85 || e.keyCode == 83)) {
+      return false; // Ctrl+U (View Source) / Ctrl+S (Save)
+    }
+  };
+</script>
+
+</html>
