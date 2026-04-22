@@ -1,0 +1,311 @@
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  position: relative;
+}
+
+
+body::before {
+  position: fixed;
+  bottom: -704px;
+  right: -631px;
+  content: "";
+  width: 1250px;
+  height: 1250px;
+  background-color: #017143;
+  border-radius: 50%;
+  /* makes it a circle */
+  display: inline-block;
+  /* required to show width/height for pseudo-elements */
+  background: conic-gradient(#017143 90deg 30deg,
+      /* Left 1/3 part (from 180° to 300°) */
+      transparent 90deg 30deg);
+  rotate: 270deg;
+  z-index: -1;
+}
+
+.bigimg {
+  width: 340px;
+  height: 493px;
+  position: fixed;
+  left: 863px;
+  top: 60px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  top: 20px;
+  left: 10px;
+}
+
+.navbar {
+  display: flex;
+  gap: 47px;
+  position: fixed;
+  top: 23px;
+  left: 900px;
+  transition: all 0.3s ease-in-out;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 800;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+  color: #017143;
+  background-color: #00000033;
+  padding: 5px 10px 5px 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.Coffee {
+  font-size: 3.6em;
+  color: #333;
+  width: 500px;
+  position: fixed;
+  top: 110px;
+  left: 100px;
+  font-weight: 800;
+  line-height: 84px;
+}
+
+h2 {
+  position: fixed;
+  top: 263.5px;
+  left: 200px;
+  color: #017143;
+  font-size: 4.6em;
+  font-weight: 900;
+}
+
+.disc {
+  font-size: 18px;
+  position: fixed;
+  top: 373px;
+  left: 105px;
+  width: 549px;
+  line-height: 26px;
+  color: #333;
+}
+
+.learn {
+  background-color: #017143;
+  text-decoration: none;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  color: white;
+  border-radius: 50px;
+  position: fixed;
+  top: 519px;
+  left: 100px;
+  font-size: 19px;
+}
+
+.learn:hover {
+  background-color: #333;
+  color: aqua;
+  transition: all 0.2s ease-in-out;
+}
+
+.lastimg {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  position: fixed;
+  top: 490px;
+  left: 491px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+
+.lastimg img:hover {
+  transition: all 0.4s ease-in-out;
+  transform: translateY(-15px) scale(1.05);
+}
+
+
+.icons {
+  position: fixed;
+  top: 250px;
+  left: 1300px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  cursor: pointer;
+}
+/* ================================
+   📱 Mobile Devices (max 480px)
+================================ */
+@media screen and (max-width: 480px) {
+  .logo {
+    width: 50px;
+    height: 50px;
+    top: 10px;
+    left: 10px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+  }
+
+  .bigimg {
+    width: 180px;
+    height: auto;
+    left: 50%;
+    top: 160px;
+    transform: translateX(-50%);
+  }
+
+  .Coffee {
+    font-size: 1.6em;
+    width: 90%;
+    top: 360px;
+    left: 5%;
+    line-height: 38px;
+  }
+
+  h2 {
+    font-size: 2.5em;
+    top: 420px;
+    left: 10%;
+  }
+
+  .disc {
+    font-size: 14px;
+    top: 490px;
+    left: 5%;
+    width: 90%;
+  }
+
+  .learn {
+    top: 610px;
+    left: 5%;
+    font-size: 15px;
+    padding: 8px 16px;
+  }
+
+  .lastimg {
+    top: 670px;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .icons {
+    top: auto;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  body::before {
+    width: 900px;
+    height: 900px;
+    bottom: -600px;
+    right: -500px;
+  }
+}
+
+
+/* ================================
+   📱 Tablets (max 768px)
+================================ */
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 60px;
+    height: 60px;
+    top: 10px;
+    left: 10px;
+  }
+
+  .navbar {
+    gap: 20px;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .bigimg {
+    width: 240px;
+    height: auto;
+    left: 60%;
+    top: 180px;
+    transform: translateX(-50%);
+  }
+
+  .Coffee {
+    font-size: 2.4em;
+    width: 90%;
+    top: 400px;
+    left: 5%;
+    line-height: 50px;
+  }
+
+  h2 {
+    font-size: 3.2em;
+    top: 470px;
+    left: 10%;
+  }
+
+  .disc {
+    font-size: 16px;
+    top: 540px;
+    left: 5%;
+    width: 90%;
+  }
+
+  .learn {
+    top: 660px;
+    left: 5%;
+    font-size: 17px;
+  }
+
+  .lastimg {
+    top: 730px;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 25px;
+  }
+
+  .icons {
+    top: auto;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  body::before {
+    width: 1100px;
+    height: 1100px;
+    bottom: -600px;
+    right: -500px;
+  }
+}
