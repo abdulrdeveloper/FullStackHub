@@ -16,6 +16,9 @@
 3. [Git for Beginners: Basics and Essential Commands](https://blog.abdulrdeveloper.me/git-for-beginners-basics-and-essential-commands-git-and-github)  
    (Full commands + A-Z beginner guide)
 
+Git sheet by Hitesh Sir https://git-scm.com/cheat-sheet
+Learn Git https://docs.chaicode.com/youtube/chai-aur-git/welcome/
+
 **Now Use This Cheat Sheet**
 
 **Professional Collaboration Flow**  
