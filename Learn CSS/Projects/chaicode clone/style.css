@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #101426;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+#home-logo {
+    width: 92px;
+    margin-left: 104px;
+    margin-top: 12px;
+    border-radius: 1px;
+}
+
+/*  Search bar code is here */
+
+#search {
+    position: relative;
+    top: -35px;
+    left: 33vh;
+}
+
+#search-bar {
+    background: none;
+    padding: 5px 5px 3px 45px;
+    margin-top: -20px;
+    width: 245px;
+    height: 37px;
+    border-radius: 2px;
+    font-size: 16px;
+    border: none;
+    outline: #8f9bb333 1px solid;
+    color: #8f9bb3e0;
+    position: relative;
+    top: -1.3px;
+}
+
+#search-bar-icon {
+    color: #8F9BB3;
+    position: absolute;
+    margin-left: 13px;
+    left: 0;
+    z-index: -99;
+}
+
+#search-bar:focus {
+    outline-color: #ff7700;
+
+}
+
+/*  Search code end here */
+
+/* header navbar code is here */
+.navbar{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 26px;
+    margin-right: 120px;
+    display: flex;
+    gap: 17px;
+    letter-spacing: 0.1px;
+}
+.navbar a{
+    text-decoration: none;
+    color: #F7F4F8;
+}
+
+#sign-up-button, #sign-in-button{
+    font-size: 13.5px;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+    padding: 11px 14.5px;
+    margin-top:-9px;
+    border-radius:3.5px;
+    margin-left: 7px;
+    
+    animation-direction: alternate;
+    border: 1px solid #ff7700;
+}
+
+#sign-in-button{
+    background: #cc5f0017;
+    color: #ff7700;
+}
+
+#sign-up-button{
+    padding-top: 13px;
+    margin-left: -9px;
+    border: none;
+    background-color: #ff7700;
+    color: #101426;
+}
+
+#sign-up-button:hover{
+    background-color: #cc5f00;
+}
+#sign-in-button:hover{
+    background-color: #cc5f0036;
+}
+
+
+/* Welcome Screen text start from Here */
+.welcome-text{
+    margin-top: 30px;
+    margin-left: 102px;
+    font-size: 36px;
+    font-weight: 500;
+    color: #F7F4F8;
+}
+.welcome-text-bg{
+    margin-top: -94px;
+  width: auto;
+  height: 140px;
+  background: linear-gradient(117deg, #612d00, #ff9437);
+}
+
+.upcoming-classes-text{
+    margin-top: 55px;
+    margin-left: 102px;
+    font-size: 26px;
+    font-weight: 500;
+    color: #F7F4F8;
+}

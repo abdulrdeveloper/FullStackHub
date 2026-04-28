@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Label</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(140deg, #06001b, #101426);
+            font-family: Arial, sans-serif;
+        }
+
+        :root {
+            --text-color: #bd5800;
+            --accent-color: #142519;
+            --button-color: #7202f3;
+        }
+
+        .container {
+            color: var(--text-color);
+            background-color: var(--accent-color);
+        }
+
+        .button {
+            color: var(--button-color);
+        }
+
+        /* Wrapper */
+        .field {
+            position: relative;
+            width: 220px;
+        }
+
+        /* Input */
+        .field input {
+            width: 100%;
+            padding: 10px 0;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #bd5800;
+            outline: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        /* Label */
+        .field label {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #ff7700cc;
+            font-size: 16px;
+            pointer-events: none;
+            transition: 0.3s ease;
+        }
+
+        /* Move label up on focus or when input has value */
+        .field input:focus+label,
+        .field input:not(:placeholder-shown)+label {
+            top: -8px;
+            font-size: 12px;
+            color: #ff9f00;
+        }
+
+        /* Hide placeholder text */
+        .field input::placeholder {
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <div class="field">
+            <input type="text" id="name" required>
+            <label for="name">Enter Your Name</label>
+        </div>
+    </form>
+
+</body>
+
+</html>
