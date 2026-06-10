@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --gold: #c9a84ca6;
+  --gold-light: #e2c97ee0;
+  --bg: #0A0A0A;
+  --bg2: #111111;
+  --text: #E8E3D9;
+  --muted: #6B6560;
+  --border: rgba(201, 168, 76, 0.199);
+}
+body {
+  background-image: radial-gradient(circle at 0 0, #e4b22a13 0%, #0000 40%), radial-gradient(circle at 100% 100%, #e4b22a0e 0%, #0000 40%);
+  background-color: #000000;
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 12px;
+  overflow-x: hidden;
+}
+.game-container {
+  position: relative;
+  z-index: 1;
+  max-width: 520px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 32px 32px 24px 32px;
+  text-align: center;
+  overflow: hidden;
+  background: var(--bg);
+}
+.game-container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 85% 15%, rgba(201, 168, 76, 0.103) 0%, transparent 50%),
+    radial-gradient(circle at 15% 15%, rgba(201, 168, 76, 0.103) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: -100;
+  opacity: 1;
+  filter: blur(35px);
+  border-radius: 20px;
+}
+.title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: linear-gradient(360deg, var(--gold-light), var(--gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  position: relative;
+  z-index: 1;
+}
+.board {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+.row {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+.box {
+  width: 120px;
+  height: 120px;
+  background: var(--bg2);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+.box:hover {
+  background: #1f1f22;
+}
+.reset-btn {
+  padding: 12px 32px;
+  font-size: 1rem;
+  color: var(--bg);
+  background: var(--gold);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+.reset-btn:hover {
+  background: var(--gold-light);
+  transform: translateY(-2px);
+}
+@media (max-width: 500px) {
+  .box {
+    width: 80px;
+    height: 80px;
+    font-size: 2.5rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .game-container {
+    padding: 24px;
+    width: 95%;
+  }
+}
+
