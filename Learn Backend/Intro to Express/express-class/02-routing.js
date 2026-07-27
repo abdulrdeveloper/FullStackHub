@@ -53,8 +53,7 @@ function block_1_httpMethods(){
         app.patch("/routes/:id", (req, res) => {
             const id = req.params.id
             if(!routes[id]) return res.status(404).json({error: "Something went wrong nhi bhejna h"});
-            //TODO complete this route
-
+            // get details by user and then update those details in databse , it`s easy , just understand the concept
         })
         app.delete("/routes/:id", (req, res) => {
             const id = req.params.id
