@@ -93,5 +93,3 @@ console.log(sortedNumbers); // [8, 25, 59, 78, 100] ✅
  - sabse pehle 2 values a,b values (0,1 index) ko layta he and unko subtract krkay final nikalta he and
  fir next index per chla jata he and iss trha se har index per jata he and final sabse choti value fir 
  uss se bari fir uss se bari and iss trha se complete sort bnata he | yay original bi change krta he */
-
- 
