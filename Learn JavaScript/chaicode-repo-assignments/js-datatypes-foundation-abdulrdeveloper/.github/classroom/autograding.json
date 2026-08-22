@@ -1,0 +1,88 @@
+{
+  "tests": [
+    {
+      "name": "01 - Chai Order",
+      "setup": "npm ci",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/01-chai-order.spec.js --verbose",
+      "timeout": 30,
+      "points": 7
+    },
+    {
+      "name": "02 - Rangoli Maker",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/02-rangoli-maker.spec.js --verbose",
+      "timeout": 30,
+      "points": 7
+    },
+    {
+      "name": "03 - Rickshaw Meter",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/03-rickshaw-meter.spec.js --verbose",
+      "timeout": 30,
+      "points": 8
+    },
+    {
+      "name": "04 - Sabzi Mandi",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/04-sabzi-mandi.spec.js --verbose",
+      "timeout": 30,
+      "points": 8
+    },
+    {
+      "name": "05 - Train Coach",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/05-train-coach.spec.js --verbose",
+      "timeout": 30,
+      "points": 8
+    },
+    {
+      "name": "06 - Kiryana Store",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/06-kiryana-store.spec.js --verbose",
+      "timeout": 30,
+      "points": 9
+    },
+    {
+      "name": "07 - Ration Card",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/07-ration-card.spec.js --verbose",
+      "timeout": 30,
+      "points": 9
+    },
+    {
+      "name": "08 - Paan Shop",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/08-paan-shop.spec.js --verbose",
+      "timeout": 30,
+      "points": 8
+    },
+    {
+      "name": "09 - Postcard Writer",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/09-postcard-writer.spec.js --verbose",
+      "timeout": 30,
+      "points": 9
+    },
+    {
+      "name": "10 - Pincode Checker",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/10-pincode-checker.spec.js --verbose",
+      "timeout": 30,
+      "points": 9
+    },
+    {
+      "name": "11 - Parcel Service",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/11-parcel-service.spec.js --verbose",
+      "timeout": 30,
+      "points": 9
+    },
+    {
+      "name": "12 - Thali Combo",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/12-thali-combo.spec.js --verbose",
+      "timeout": 30,
+      "points": 9
+    }
+  ]
+}

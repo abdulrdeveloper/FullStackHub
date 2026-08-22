@@ -1,0 +1,17 @@
+{
+  "name": "js-async-oop-lab",
+  "version": "1.0.0",
+  "description": "JavaScript Async & OOP Lab - Story-based exercises to master this keyword, classes, inheritance, Promises, async/await, and more",
+  "type": "module",
+  "scripts": {
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "test:watch": "NODE_OPTIONS=--experimental-vm-modules jest --watchAll",
+    "test:win": "set NODE_OPTIONS=--experimental-vm-modules&& jest",
+    "test:win:watch": "set NODE_OPTIONS=--experimental-vm-modules&& jest --watchAll"
+  },
+  "keywords": ["javascript", "async", "oop", "lab", "education"],
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

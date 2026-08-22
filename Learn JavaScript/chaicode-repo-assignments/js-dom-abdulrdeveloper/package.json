@@ -1,0 +1,18 @@
+{
+  "name": "js-dom-lab",
+  "version": "1.0.0",
+  "description": "JavaScript DOM Manipulation Lab - Story-based exercises to master createElement, querySelector, classList, events, forms, traversal, and more",
+  "type": "module",
+  "scripts": {
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "test:watch": "NODE_OPTIONS=--experimental-vm-modules jest --watchAll",
+    "test:win": "set NODE_OPTIONS=--experimental-vm-modules&& jest",
+    "test:win:watch": "set NODE_OPTIONS=--experimental-vm-modules&& jest --watchAll"
+  },
+  "keywords": ["javascript", "dom", "lab", "education"],
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  }
+}

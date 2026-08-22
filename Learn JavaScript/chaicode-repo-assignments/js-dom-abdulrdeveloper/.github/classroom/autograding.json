@@ -1,0 +1,88 @@
+{
+  "tests": [
+    {
+      "name": "01 - Kolkata Sweet Shop",
+      "setup": "npm ci",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/01-kolkata-sweet-shop.spec.js --verbose",
+      "timeout": 30,
+      "points": 7
+    },
+    {
+      "name": "02 - Chai Stall Board",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/02-chai-stall-board.spec.js --verbose",
+      "timeout": 30,
+      "points": 7
+    },
+    {
+      "name": "03 - Rangoli Designer",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/03-rangoli-designer.spec.js --verbose",
+      "timeout": 30,
+      "points": 8
+    },
+    {
+      "name": "04 - Mehndi Canvas",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/04-mehndi-canvas.spec.js --verbose",
+      "timeout": 30,
+      "points": 8
+    },
+    {
+      "name": "05 - Puja Thali Builder",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/05-puja-thali-builder.spec.js --verbose",
+      "timeout": 30,
+      "points": 8
+    },
+    {
+      "name": "06 - Wedding Card Maker",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/06-wedding-card-maker.spec.js --verbose",
+      "timeout": 30,
+      "points": 9
+    },
+    {
+      "name": "07 - Aarti Form",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/07-aarti-form.spec.js --verbose",
+      "timeout": 30,
+      "points": 9
+    },
+    {
+      "name": "08 - Kite Festival Gallery",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/08-kite-festival-gallery.spec.js --verbose",
+      "timeout": 30,
+      "points": 8
+    },
+    {
+      "name": "09 - Auto Wallah Counter",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/09-auto-wallah-counter.spec.js --verbose",
+      "timeout": 30,
+      "points": 9
+    },
+    {
+      "name": "10 - Durga Puja Pandal",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/10-durga-puja-pandal.spec.js --verbose",
+      "timeout": 30,
+      "points": 9
+    },
+    {
+      "name": "11 - Navratri Garba",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/11-navratri-garba.spec.js --verbose",
+      "timeout": 30,
+      "points": 9
+    },
+    {
+      "name": "12 - Republic Day Parade",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/12-republic-day-parade.spec.js --verbose",
+      "timeout": 30,
+      "points": 9
+    }
+  ]
+}

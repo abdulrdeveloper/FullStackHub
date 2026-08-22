@@ -1,0 +1,88 @@
+{
+  "tests": [
+    {
+      "name": "01 - Chai Tapri",
+      "setup": "npm ci",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/01-chai-tapri.spec.js --verbose",
+      "timeout": 30,
+      "points": 7
+    },
+    {
+      "name": "02 - Cricket Scoreboard",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/02-cricket-scoreboard.spec.js --verbose",
+      "timeout": 30,
+      "points": 7
+    },
+    {
+      "name": "03 - Auto Rickshaw Meter",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/03-auto-rickshaw-meter.spec.js --verbose",
+      "timeout": 30,
+      "points": 8
+    },
+    {
+      "name": "04 - Bollywood Playlist",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/04-bollywood-playlist.spec.js --verbose",
+      "timeout": 30,
+      "points": 8
+    },
+    {
+      "name": "05 - Sabzi Mandi",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/05-sabzi-mandi.spec.js --verbose",
+      "timeout": 30,
+      "points": 8
+    },
+    {
+      "name": "06 - Diwali Lights",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/06-diwali-lights.spec.js --verbose",
+      "timeout": 30,
+      "points": 8
+    },
+    {
+      "name": "07 - IPL Points Table",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/07-ipl-points-table.spec.js --verbose",
+      "timeout": 30,
+      "points": 9
+    },
+    {
+      "name": "08 - EMI Calculator",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/08-emi-calculator.spec.js --verbose",
+      "timeout": 30,
+      "points": 9
+    },
+    {
+      "name": "09 - UPI Retry",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/09-upi-retry.spec.js --verbose",
+      "timeout": 30,
+      "points": 8
+    },
+    {
+      "name": "10 - Biryani Order",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/10-biryani-order.spec.js --verbose",
+      "timeout": 30,
+      "points": 8
+    },
+    {
+      "name": "11 - Rangoli Pattern",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/11-rangoli-pattern.spec.js --verbose",
+      "timeout": 30,
+      "points": 10
+    },
+    {
+      "name": "12 - Indian Railways",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/12-indian-railways.spec.js --verbose",
+      "timeout": 30,
+      "points": 10
+    }
+  ]
+}

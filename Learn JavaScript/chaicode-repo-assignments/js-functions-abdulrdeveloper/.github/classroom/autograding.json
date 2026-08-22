@@ -1,0 +1,88 @@
+{
+  "tests": [
+    {
+      "name": "01 - Dosa Counter",
+      "setup": "npm ci",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/01-dosa-counter.spec.js --verbose",
+      "timeout": 30,
+      "points": 7
+    },
+    {
+      "name": "02 - Cricket Stats",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/02-cricket-stats.spec.js --verbose",
+      "timeout": 30,
+      "points": 7
+    },
+    {
+      "name": "03 - Tiffin Service",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/03-tiffin-service.spec.js --verbose",
+      "timeout": 30,
+      "points": 8
+    },
+    {
+      "name": "04 - Bollywood Director",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/04-bollywood-director.spec.js --verbose",
+      "timeout": 30,
+      "points": 8
+    },
+    {
+      "name": "05 - Dabbawala Tracker",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/05-dabbawala-tracker.spec.js --verbose",
+      "timeout": 30,
+      "points": 8
+    },
+    {
+      "name": "06 - Shaadi RSVP",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/06-shaadi-rsvp.spec.js --verbose",
+      "timeout": 30,
+      "points": 9
+    },
+    {
+      "name": "07 - Mehndi Pattern",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/07-mehndi-pattern.spec.js --verbose",
+      "timeout": 30,
+      "points": 9
+    },
+    {
+      "name": "08 - Dhaba Rating",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/08-dhaba-rating.spec.js --verbose",
+      "timeout": 30,
+      "points": 8
+    },
+    {
+      "name": "09 - Holi Colors",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/09-holi-colors.spec.js --verbose",
+      "timeout": 30,
+      "points": 9
+    },
+    {
+      "name": "10 - Masala Blender",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/10-masala-blender.spec.js --verbose",
+      "timeout": 30,
+      "points": 9
+    },
+    {
+      "name": "11 - Festival Planner",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/11-festival-planner.spec.js --verbose",
+      "timeout": 30,
+      "points": 9
+    },
+    {
+      "name": "12 - Panchayat Election",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/12-panchayat-election.spec.js --verbose",
+      "timeout": 30,
+      "points": 9
+    }
+  ]
+}
