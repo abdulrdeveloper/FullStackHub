@@ -22,6 +22,7 @@ The repository is intentionally organized by subject so each area can be explore
 | [Learn JavaScript](Learn%20JavaScript) | Language fundamentals, DOM work, asynchronous JavaScript, notes, and assignments | [JavaScript projects](Learn%20JavaScript/Code%20Projects) |
 | [Learn React](Learn%20React) | React foundations and application practice | [React learning folder](Learn%20React) |
 | [Learn Backend](Learn%20Backend) | Node.js, Express, TypeScript, authentication, and HTTP concepts | [Backend learning folder](Learn%20Backend) |
+| [Backend Best Collection](backend%20best%20collection) | Production-ready APIs and backend services including CRUD operations and REST architecture | [Backend collection](backend%20best%20collection) |
 | [Learn TypeScript](Learn%20TypeScript) | TypeScript notes and projects using different runtimes and tools | [TypeScript learning folder](Learn%20TypeScript) |
 | [Learn SQL](Learn%20SQL) | SQL fundamentals, queries, and database concepts | [SQL guide](Learn%20SQL/README.md) |
 | [Learn HTML](Learn%20HTML) | HTML guides, challenges, resources, and practice projects | [HTML learning folder](Learn%20HTML) |
@@ -43,6 +44,10 @@ The [Collection of mini-projects](Collection%20of%20mini-projects) contains self
 - [Random Cat Viewer](Collection%20of%20mini-projects/React-Random-Cat-Viewer-API)
 - [ChaiTube Video Listening](Collection%20of%20mini-projects/ChaiTube%20Video%20listening)
 - [Tic Tac Toe](Collection%20of%20mini-projects/Tic%20Tac%20Toe)
+
+Backend and API projects include:
+
+- [CRUD Notes App](backend%20best%20collection/crud-notes-app) - RESTful CRUD API built with Express 5, MongoDB, and Mongoose
 
 JavaScript practice projects are available in [Learn JavaScript/Code Projects](Learn%20JavaScript/Code%20Projects), and the assignment work is grouped in [Learn JavaScript/chaicode-repo-assignments](Learn%20JavaScript/chaicode-repo-assignments).
 
@@ -109,6 +114,10 @@ Not every folder is a Node.js application. Notes, HTML/CSS/JavaScript exercises,
 ## Purpose
 
 This repository is a practical record of learning by building. It is updated as new concepts are studied, assignments are completed, and ideas are turned into working projects.
+
+## Contributing
+
+Contributions, bug fixes, suggestions, and improvements are always welcome! Please check out [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines, repository conventions, and pull request workflows.
 
 ## Author
 
