@@ -7,11 +7,11 @@ console.error ("Warning :Fingerprint avidence detected")
 
 
 const evidence = [
-    { id: 1, item:"Book", location: "Lahire"},
-    { id: 3, item:"Book", location: "Lahire"},
-    { id: 2, item:"Book", location: "Lahire"},
+    { id: 1, item:"Book", location: "Lahore"},
+    { id: 3, item:"Book", location: "Lahore"},
+    { id: 2, item:"Book", location: "Lahore"},
 ]
-console.table(evidence)  // it helps to make a table instead of just printing as it is
+console.table(evidence);  // it helps to make a table instead of just printing as it is
 
 
 console.group("Group starts");
@@ -21,12 +21,14 @@ console.log("My log 3");
 console.groupEnd("Group ends");  // not commonly used but it shows in a strucutre all log inside group 
 
 
+//cpp mai 100000 0.21ms mai print ho jata he vs yay 4.538ms mai hota he  
 console.time("Time starts now");
 let dnaMatches = 0;
-for(let i=0; i<1000000; i++){        // 1000000 == 1_000_000 ham koi bi likh saktay hain both are valid , yay performance pay asar nai dalta just big values ko easily read kr saktay hain
+for(let i=0; i<100000; i++){        // 1000000 == 1_000_000 ham koi bi likh saktay hain both are valid , yay performance pay asar nai dalta just big values ko easily read kr saktay hain
     dnaMatches++;
 }
 console.timeEnd("Time starts now");  // yay work krta he but same label lganay se and yay btata he ke inside loop ya kuch or kitnay time mai complete hoa
+
 
 //yay simply print ho jaiy ga
 console.log("ChaiCode");   // count 1

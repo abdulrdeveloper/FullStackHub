@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Mini Kanban Board</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+
+  <h1>Kanban Board</h1>
+
+  <div class="board">
+
+    <div class="column" data-status="todo">
+      <h2>Todo</h2>
+      <div class="tasks"></div>
+      <button class="add-btn"><i class="fa-solid fa-plus fa-sm"></i>Add Task</button>
+    </div>
+
+    <div class="column" data-status="inprogress">
+      <h2>In Progress</h2>
+      <div class="tasks"></div>
+      <button class="add-btn"><i class="fa-solid fa-plus fa-sm"></i>Add Task</button>
+    </div>
+
+    <div class="column" data-status="done">
+      <h2>Done</h2>
+      <div class="tasks"></div>
+      <button class="add-btn"><i class="fa-solid fa-plus fa-sm"></i>Add Task</button>
+    </div>
+  </div>
+
+  <script type="module" src="index.js"></script>
+</body>
+
+</html>

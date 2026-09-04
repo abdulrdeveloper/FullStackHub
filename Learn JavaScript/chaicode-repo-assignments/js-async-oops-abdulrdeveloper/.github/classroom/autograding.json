@@ -1,0 +1,88 @@
+{
+  "tests": [
+    {
+      "name": "01 - Samosa Wala",
+      "setup": "npm ci",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/01-samosa-wala.spec.js --verbose",
+      "timeout": 30,
+      "points": 7
+    },
+    {
+      "name": "02 - Lassi Stand",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/02-lassi-stand.spec.js --verbose",
+      "timeout": 30,
+      "points": 7
+    },
+    {
+      "name": "03 - Dabba Delivery",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/03-dabba-delivery.spec.js --verbose",
+      "timeout": 30,
+      "points": 8
+    },
+    {
+      "name": "04 - Cricket Academy",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/04-cricket-academy.spec.js --verbose",
+      "timeout": 30,
+      "points": 8
+    },
+    {
+      "name": "05 - Haveli Mansion",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/05-haveli-mansion.spec.js --verbose",
+      "timeout": 30,
+      "points": 8
+    },
+    {
+      "name": "06 - Chai Promise",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/06-chai-promise.spec.js --verbose",
+      "timeout": 30,
+      "points": 9
+    },
+    {
+      "name": "07 - Zomato Delivery",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/07-zomato-delivery.spec.js --verbose",
+      "timeout": 30,
+      "points": 9
+    },
+    {
+      "name": "08 - IRCTC Booking",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/08-irctc-booking.spec.js --verbose",
+      "timeout": 30,
+      "points": 9
+    },
+    {
+      "name": "09 - Swiggy Batch",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/09-swiggy-batch.spec.js --verbose",
+      "timeout": 30,
+      "points": 9
+    },
+    {
+      "name": "10 - Paytm Retry",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/10-paytm-retry.spec.js --verbose",
+      "timeout": 30,
+      "points": 9
+    },
+    {
+      "name": "11 - Temple Queue",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/11-temple-queue.spec.js --verbose",
+      "timeout": 30,
+      "points": 9
+    },
+    {
+      "name": "12 - Startup Incubator",
+      "setup": "",
+      "run": "NODE_OPTIONS=--experimental-vm-modules npx jest tests/12-startup-incubator.spec.js --verbose",
+      "timeout": 30,
+      "points": 9
+    }
+  ]
+}
