@@ -6,11 +6,15 @@ function brewPotion(ingredient, dose) {
 const mixElixir = function (ingredient) {
   return `Mixing elexir with ${ingredient} `;
 };
+console.log(mixElixir("Dragon's Blood"));
+
 
 // no own 'this', no `arguments` object
 const distilEssence = (ingredient) => {
   return `Mixing elexir with ${ingredient} `;
 };
+console.log(distilEssence("Phoenix Feather"));
+
 
 function oldBrewingLogs() {
   console.log("Type: ", typeof arguments);
@@ -85,3 +89,14 @@ function makeFunc() {
 
 const myFunc = makeFunc();
 myFunc();
+
+
+// IIFE (Bante hi fauran chal jayega)
+(function() {
+  console.log("Main IIFE hoon aur bante hi chal gaya!");
+})();
+
+// Arrow Function ke sath IIFE
+(() => {
+  console.log("Main Arrow IIFE hoon!");
+})();

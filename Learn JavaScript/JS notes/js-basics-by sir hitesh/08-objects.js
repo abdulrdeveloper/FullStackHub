@@ -10,6 +10,7 @@ const hero = {
 hero.weapon = "Fire";
 
 delete hero.level;
+console.log(hero);
 
 const ranger = {
   name: "Lakshya the swift",

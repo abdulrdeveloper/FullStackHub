@@ -37,3 +37,32 @@ console.log(Array.isArray("Ravi"));
 // 4. Non Mutating: concat, slice, flat, flatmap [1, 2, 3, [5, 6]]
 // 5. Searching includes
 // 6. Array.isArray()
+
+// 1D Array 
+const ekKamra = ["Red", "Blue", "Green"];
+console.log(ekKamra[0]);
+console.log(ekKamra[2]);
+
+// 2D Array
+
+const ekFloor = [
+  ["Red", "Blue", "Green"],
+  ["White", "Black", "Yellow"]
+];
+console.log(ekFloor[1][0]);
+console.log(ekFloor[0][1]);
+
+// 3D Array
+
+const pooriBuilding = [
+  [
+    ["Red", "Blue"],
+    ["White", "Black"]
+  ],
+  [
+    ["Yellow", "Pink"],
+    ["Green", "Purple"]
+  ]
+];
+console.log(pooriBuilding[1][0][1]);
+console.log(pooriBuilding[0][1][0]);
