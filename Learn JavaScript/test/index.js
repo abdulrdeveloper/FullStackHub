@@ -3,7 +3,7 @@
     //     function sayhello(a,b){
     //         return a * b;
     //     }
-    //     /* we give 2 numbersin function (those numbers are given by the user) */
+    //     /* we give 2 numbers in function (those numbers are given by the user) */
     //     let finaloutput = sayhello(num1,num2);
     //     alert("Hello Dear , Your calculation is: " + finaloutput);
     //     console.log(`Hello Dear , Your calculation is: ${finaloutput}`);

@@ -24,6 +24,7 @@ const priceList = [
 ];
 
 const priceObject = Object.fromEntries(priceList);
+console.log(priceObject);
 
 const displayCase = {
   artifact: "Obsidian",
