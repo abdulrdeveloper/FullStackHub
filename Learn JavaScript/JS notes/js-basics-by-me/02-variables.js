@@ -1,4 +1,4 @@
-// yya var he ise kabhi use nai krna yay deprecate nai hoa lakin yay globally work krnay lag jata he
+// yay var he ise kabhi use nai krna yay deprecate nai hoa lakin yay globally work krnay lag jata he
 var shipname = "The Amber";
 console.log("ShipName: ", shipname)
 

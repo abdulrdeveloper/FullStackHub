@@ -23,10 +23,10 @@ console.log(parseInt("111", 2));  // it will convert binary to decimal , 111 mea
 
 const thrustForce = 4.567;
 
-console.log(Math.round(thrustForce));
-console.log(Math.floor(thrustForce));
-console.log(Math.ceil(thrustForce));
-console.log(Math.trunc(thrustForce));
+console.log(Math.round(thrustForce)); // round off the number to nearest integer
+console.log(Math.ceil(thrustForce));  // round up the number to nearest integer
+console.log(Math.floor(thrustForce)); // round down the number to nearest integer
+console.log(Math.trunc(thrustForce)); // remove the decimal part of the number
 
 const temps = [-120, 43, 56, -23];
 console.log(Math.min(...temps));
@@ -43,7 +43,7 @@ console.log(almostEqual(0.1 + 0.2, 0.3));
 
 
 // Math.abs(a - b) dono numbers ka sirf 'gap' nikalta hai (minus sign ko hata kar).
-  // Misal: (0.1 + 0.2) aur 0.3 ka gap = 0.00000000000000004 hota hai.
+  // Example: (0.1 + 0.2) aur 0.3 ka gap = 0.00000000000000004 hota hai.
   // Number.EPSILON galti ki aakhri limit hai, jo lag bhag 0.00000000000000022 hoti hai.
   // Logic: Kyun ke hamara gap (...04) EPSILON ki limit (...22) se chota hai, 
   // isliye hum inhein barabar (true) maan lete hain.

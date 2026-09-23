@@ -16,12 +16,7 @@ console.log(typeof weatherApiResponse);
 
 const uniqueRuneId = Symbol("rune_of_fire");
 const uniqueRuneId2 = Symbol("rune_of_fire");
-console.log(
-  "Rune: ",
-  uniqueRuneId.toString(),
-  "| type of: ",
-  typeof uniqueRuneId,
-);
+console.log("Rune: ",uniqueRuneId.toString(),"| type of: ", typeof uniqueRuneId, "| values equal: ", uniqueRuneId === uniqueRuneId2);
 
 const heroStats = {
   name: "Deepak",

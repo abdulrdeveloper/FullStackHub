@@ -4,10 +4,12 @@ console.log("Shipname: ", shipName);
 let crewCount = 12;
 console.log("crew count: ", crewCount);
 crewCount = 14;
+console.log("crew count: ", crewCount);
+
 
 const captainName = "Jack Sparrow";
 console.log("Captain Name: ", captainName);
-// captainName = "Dipesh";
+// captainName = "Jack Sparrow";
 
 if (true) {
   var leakyTreasure = "Gold coins";
@@ -21,6 +23,7 @@ for (let j = 0; i < 10; i++) {
 }
 
 console.log(leakyTreasure);
+
 
 let shipSpeed = 22;
 let _privatelog = "secret";
@@ -40,4 +43,4 @@ const crewRoster = ["Alok", "Abhinav", "Tasnish"];
 crewRoster.push("vraj");
 crewRoster[0] = "Shubham";
 
-crewRoster = ["Someone"];
+console.log(crewRoster);

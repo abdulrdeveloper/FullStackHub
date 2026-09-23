@@ -17,6 +17,7 @@ const evidenceLog = [
   { id: 3, item: "Red fiber strand", location: "Door handle" },
 ];
 
+
 console.table(evidenceLog);
 
 console.group("Groupd starts");
@@ -25,15 +26,22 @@ console.log("My log 2");
 console.log("My log 3");
 console.groupEnd();
 
-// console.time("time starts now");
 
-// let dnaMatches = 0;
-// for (let i = 0; i < 1_000_000; i++) {
-//   dnaMatches++;
-// }
-// console.timeEnd();
+console.time("time starts now");
+
+let dnaMatches = 0;
+for (let i = 0; i < 1_000_000; i++) {
+  dnaMatches++;
+}
+console.timeEnd();
+
 
 console.log("Chaicode");
 console.log("Chaicode");
 console.log("Chaicode");
 console.log("Chaicode");
+
+console.count("Chaicode");
+console.count("Chaicode");
+console.count("Chaicode");
+console.count("Chaicode");
