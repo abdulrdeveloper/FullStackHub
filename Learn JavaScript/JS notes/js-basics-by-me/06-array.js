@@ -112,6 +112,6 @@ console.log(Array.isArray());
 1. Create array like this []
 2. Avoid this Array(n)
 3. Array are 0 based , bahir jao gay to kuch nai milay ga error aiy gay undefined etc , like agar array mai 4 index hain to 6 likhogay to undefined aiy ga
-4. Mutating Methods : push, pop , shift, unshift, splice
+4. Mutating Methods : push, pop, shift, unshift, splice
 5. Slice , concat, flat, flatmap
 */
