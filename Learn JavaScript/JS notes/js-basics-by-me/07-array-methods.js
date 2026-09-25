@@ -67,10 +67,10 @@ const totalRevenue = orders.reduce((total, eachitem) => {
  - ek total/sum hota he and 
  - 2nd parameter eachitem wala hota he , 
  - eachitem calculate krnay mai help krta he and
- - total sab calculate datako uss ke bahir 0 mai add krta rehta he jabtak process complete na ho jaiy and 
+ - total sab calculate data ko uss ke bahir 0 mai add krta rehta he jabtak process complete na ho jaiy and 
  - final value return krta he and show krwa deta he */
  console.log(totalRevenue);
- // yay return krta he value ko  
+ // yay return krta he value ko
 
   
 ////////////////////////////////////////////////////// Sort  ///////////////////////////////////////////////////////
@@ -89,7 +89,7 @@ const sortedNumbers = ticketNumbers.sort((a,b) => a-b);
 console.log(sortedNumbers); // [8, 25, 59, 78, 100] ✅
 
 /* jaise hi hamne ise aysay kia to sorted number of array mil gya 
- - iska workflow : 
+ - iska workflow :
  - sabse pehle 2 values a,b values (0,1 index) ko layta he and unko subtract krkay final nikalta he and
  fir next index per chla jata he and iss trha se har index per jata he and final sabse choti value fir 
  uss se bari fir uss se bari and iss trha se complete sort bnata he | yay original bi change krta he */
