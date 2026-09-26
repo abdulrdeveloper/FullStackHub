@@ -74,7 +74,7 @@ const catalogEntry = {
 }
 
 Object.seal(catalogEntry);
-catalogEntry.description = " Gold city means Zurich ";
+catalogEntry.description = " Gold city means Zurich";
 console.log(catalogEntry);
 
 
