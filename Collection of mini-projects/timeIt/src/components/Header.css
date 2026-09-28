@@ -1,0 +1,120 @@
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+  padding: 12px 0;
+  margin-bottom: 8px;
+  animation: revealY 0.7s ease both;
+}
+
+.app-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.app-logo-icon {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  border: 1px solid var(--border-soft);
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.88) 0%, rgba(10, 10, 10, 0.96) 100%);
+  color: var(--gold);
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.app-logo:hover .app-logo-icon {
+  transform: scale(1.08);
+}
+
+.app-logo-text {
+  font: 700 1.2rem/1 "Space Grotesk", sans-serif;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  background: linear-gradient(210deg, var(--gold), #f1d293 36%, var(--silver) 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  white-space: nowrap;
+}
+
+.app-nav {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  justify-content: flex-end;
+}
+
+.app-nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 7px 12px;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  color: var(--text-dim);
+  font: 500 0.8rem/1 "Space Grotesk", sans-serif;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+}
+
+.app-nav a i {
+  font-size: 0.8rem;
+}
+
+.app-nav a:hover {
+  border-color: rgba(255, 174, 0, 0.3);
+  color: var(--text-main);
+  background: linear-gradient(135deg, rgba(30, 30, 30, 0.6), rgba(15, 15, 15, 0.8));
+}
+
+.app-nav a.active {
+  background: linear-gradient(135deg, var(--gold), rgba(255, 174, 0, 0.8));
+  color: #000;
+  border-color: var(--gold);
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(255, 174, 0, 0.2);
+}
+
+@media (min-width: 768px) {
+  .app-header {
+    gap: 40px;
+    padding: 14px 0;
+    margin-bottom: 12px;
+  }
+
+  .app-logo-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .app-logo-text {
+    font-size: 1.5rem;
+  }
+
+  .app-nav {
+    gap: 8px;
+  }
+
+  .app-nav a {
+    padding: 8px 14px;
+    font-size: 0.88rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .app-nav a span.nav-label {
+    display: none;
+  }
+
+  .app-nav a {
+    padding: 8px 10px;
+  }
+}

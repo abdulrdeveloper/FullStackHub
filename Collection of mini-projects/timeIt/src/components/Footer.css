@@ -1,0 +1,19 @@
+.app-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 12px;
+  padding: 12px 0;
+  border-top: 1px solid var(--border-soft);
+  color: #8f8f8f;
+  font: 400 0.75rem/1 "Space Grotesk", sans-serif;
+  letter-spacing: 0.04em;
+}
+
+@media (min-width: 768px) {
+  .app-footer {
+    padding: 14px 0;
+    font-size: 0.82rem;
+  }
+}

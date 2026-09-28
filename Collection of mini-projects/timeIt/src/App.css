@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+:root {
+  color-scheme: dark;
+  --bg-main: #050505;
+  --bg-soft: #0e0e0e;
+  --card-bg: rgba(14, 14, 14, 0.7);
+  --card-bg-strong: rgba(8, 8, 8, 0.92);
+  --border-soft: rgba(255, 255, 255, 0.08);
+  --text-main: #f3f3f3;
+  --text-dim: #aaaaaa;
+  --gold: #ffae00;
+  --silver: #8b8b8b;
+  --shadow-xl: 0 26px 60px rgba(0, 0, 0, 0.7);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  font-family: "Poppins", sans-serif;
+  color: var(--text-main);
+  background:
+    radial-gradient(circle at 20% 20%, rgba(40, 40, 40, 0.16) 0%, transparent 40%),
+    radial-gradient(circle at 80% 80%, rgba(40, 40, 40, 0.15) 0%, transparent 40%),
+    linear-gradient(135deg, #000000 0%, #0a0a0a 50%, #111111 100%);
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.03;
+  z-index: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+
+@keyframes revealY {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+button {
+  font: 600 0.88rem/1 "Space Grotesk", sans-serif;
+  cursor: pointer;
+  padding: 0.6rem 1.25rem;
+  border-radius: 60px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg, #222222, #000000);
+  color: var(--gold);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.2);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.45);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 174, 0, 0.35);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.62), 0 0 20px rgba(255, 174, 0, 0.08);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+button:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+input[type="number"] {
+  font: 500 0.95rem/1 "Poppins", sans-serif;
+  padding: 0.65rem 1rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-soft);
+  background: linear-gradient(180deg, rgba(22, 22, 22, 0.88) 0%, rgba(9, 9, 9, 0.95) 100%);
+  color: var(--text-main);
+  outline: none;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+input[type="number"]:focus {
+  transform: translateY(-1px);
+  border-color: rgba(255, 174, 0, 0.45);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.5);
+}
+
+input[type="number"]::placeholder {
+  color: #8e8e8e;
+}

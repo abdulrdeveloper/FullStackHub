@@ -1,0 +1,24 @@
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.app-main {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
+  animation: revealY 0.55s ease both;
+}
+
+@media (min-width: 768px) {
+  .app-shell {
+    padding: 0 28px;
+  }
+}
