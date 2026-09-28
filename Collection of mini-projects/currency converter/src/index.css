@@ -1,0 +1,177 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gold: #dd6b00;
+  --gold-light: #dd6b00ce;
+  --bg-light: #fdfcf8;
+  --text-dark: #33312e;
+  --muted: #474543;
+  --border: rgba(201, 168, 76, 0.3);
+}
+
+@layer base {
+  body {
+    @apply font-sans antialiased;
+    color: var(--text-dark);
+  }
+
+  input:disabled {
+    @apply opacity-50 cursor-not-allowed;
+  }
+}
+
+@layer components {
+  .app-container {
+    @apply w-full min-h-screen flex items-center justify-center bg-center bg-cover p-4;
+    background-color: var(--bg-light);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .app-container::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at 20% 30%, rgba(201, 168, 76, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 80% 70%, rgba(201, 168, 76, 0.1) 0%, transparent 40%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .app-overlay {
+    @apply absolute inset-0 z-0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.041) 0%, rgba(245, 240, 230, 0.151) 100%);
+    backdrop-filter: blur(3px);
+  }
+
+  .card-container {
+    @apply relative z-10 w-full max-w-xl;
+  }
+
+  .converter-card {
+    @apply relative bg-white/50 backdrop-blur-xl p-8 shadow-[0_8px_32px_rgba(0,0,0,0.05)];
+    border: 1px dashed var(--border);
+    border-radius: 20px;
+    z-index: 1;
+    overflow: hidden;
+    animation: fadeUp 0.8s ease both;
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .converter-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    opacity: 1;
+    pointer-events: none;
+    border-radius: 20px;
+    z-index: 0;
+  }
+
+  .live-status, .app-divider, .app-title {
+    display: none;
+  }
+
+  .converter-form {
+    @apply space-y-5 relative z-10;
+  }
+
+  .input-box-wrapper {
+    @apply w-full;
+  }
+
+  .input-box {
+    @apply w-full bg-white/80 border border-black/5 rounded-[14px] p-5 flex gap-6 transition-all duration-300 hover:border-black/10 hover:shadow-sm focus-within:border-[var(--gold)] focus-within:bg-white;
+  }
+
+  .input-box > div:first-child {
+    @apply flex-1 flex flex-col justify-between;
+  }
+
+  .input-box > div:last-child {
+    @apply flex-1 flex flex-col items-end justify-between;
+  }
+
+  .input-label {
+    @apply text-[11px] font-bold uppercase tracking-[1px] block mb-3;
+    color: var(--muted);
+  }
+
+  .amount-input {
+    @apply w-full bg-transparent font-bold text-2xl outline-none;
+    color: var(--text-dark);
+  }
+
+  .amount-input::placeholder {
+    color: #cbd5e1;
+  }
+
+  .amount-input::-webkit-inner-spin-button,
+  .amount-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  .amount-input:disabled {
+    color: #232425e0;
+    opacity: 1;
+  }
+
+  .currency-type-label {
+    @apply text-[11px] font-bold uppercase tracking-[1px] block mb-3;
+    color: var(--muted);
+  }
+
+  .currency-select {
+    @apply bg-transparent border border-black/10 rounded-lg px-3 py-2 font-bold text-sm outline-none transition-all duration-300 cursor-pointer hover:border-[var(--gold)] focus:border-[var(--gold)];
+    color: var(--text-dark);
+  }
+
+  .currency-select option {
+    background-color: #ffffffe5;
+    color: var(--text-dark);
+  }
+
+  .swap-btn-wrapper {
+    @apply flex justify-center py-2 relative z-10;
+  }
+
+  .swap-btn {
+    @apply flex items-center justify-center w-12 h-12 rounded-full border-2 border-white cursor-pointer transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/20 hover:-translate-y-1 hover:rotate-180 active:scale-95;
+    background: linear-gradient(135deg, var(--gold-light), var(--gold));
+    color: rgb(255, 255, 255);
+    box-shadow: 0 4px 12px rgba(201, 168, 76, 0.2);
+  }
+
+  .swap-btn svg {
+    @apply w-5 h-5;
+  }
+
+  .submit-btn {
+    @apply w-full text-white font-bold py-4 rounded-xl transition-all duration-300 uppercase text-sm tracking-[1.5px] cursor-pointer shadow-lg hover:shadow-xl mt-4;
+    background: linear-gradient(135deg, var(--gold-light), var(--gold));
+    box-shadow: 0 4px 15px rgba(201, 168, 76, 0.3);
+  }
+
+  .submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(201, 168, 76, 0.4);
+  }
+}
+
