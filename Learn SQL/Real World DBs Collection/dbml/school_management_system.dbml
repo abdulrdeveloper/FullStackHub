@@ -1,0 +1,129 @@
+Table students {
+  id serial [pk]
+  first_name varchar(255)
+  last_name varchar(255)
+  gender char(20)
+  registration_number char(100) [unique]
+  phone_number char(20)
+  email varchar(322)
+  dob date
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table department {
+  id serial [pk]
+  department_name varchar(255)
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table programs {
+  id serial [pk]
+  department_id int
+  program_name varchar(255)
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table teachers {
+  id serial [pk]
+  department_id int
+  first_name varchar(255)
+  last_name varchar(255)
+  phone_number char(20)
+  email varchar(322)
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table courses {
+  id serial [pk]
+  program_id int
+  course_name varchar(255)
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table short_courses {
+  id serial [pk]
+  department_id int
+  course_name varchar(255)
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table teacher_courses {
+  id serial [pk]
+  teacher_id int
+  course_id int
+  created_at timestamp
+}
+
+Table programs_enrollment {
+  id serial [pk]
+  student_id int
+  is_student_passed_prev_exam boolean
+  program_id int
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table short_courses_enrollment {
+  id serial [pk]
+  student_id int
+  short_course_id int
+  enrollment_date date
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table programs_fee_structure {
+  id serial [pk]
+  program_id int
+  total_fee decimal
+  admission_fee decimal
+  semester_fee decimal
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table short_courses_fee_structure {
+  id serial [pk]
+  short_course_id int
+  total_fee decimal
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table fee_payments {
+  id serial [pk]
+  student_id int
+  program_id int
+  short_course_id int
+  amount_paid decimal
+  payment_date date
+  payment_method varchar(50)
+  created_at timestamp
+  updated_at timestamp
+}
+
+Ref: department.id < programs.department_id
+Ref: department.id < short_courses.department_id
+
+Ref: programs.id < courses.program_id
+Ref: department.id < teachers.department_id
+Ref: teachers.id < teacher_courses.teacher_id
+Ref: courses.id < teacher_courses.course_id
+
+Ref: students.id < programs_enrollment.student_id
+Ref: programs.id < programs_enrollment.program_id
+Ref: students.id < short_courses_enrollment.student_id
+Ref: short_courses.id < short_courses_enrollment.short_course_id
+
+Ref: programs.id < programs_fee_structure.program_id
+Ref: short_courses.id < short_courses_fee_structure.short_course_id
+
+Ref: students.id < fee_payments.student_id
+Ref: programs.id < fee_payments.program_id
+Ref: short_courses.id < fee_payments.short_course_id

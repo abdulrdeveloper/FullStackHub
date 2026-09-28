@@ -1,0 +1,138 @@
+title Student Management System | Superior College Sheikhupura Campus
+
+// students, department, programs, teachers, courses, short courses, teacher_courses,programs_enrollment, short_courses_enrollment, program_fee_structure, short_course_fee_structure, fee_payments
+
+
+students [icon:user, color:blue] {
+  id serial pk
+  first_name varchar(255)
+  last_name varchar(255)
+  gender char(20)
+  registration_number unique char(100)
+  phone_number char(20)
+  email varchar(322)
+  dob date
+  created_at timestamp
+  updated_at timestamp
+}
+
+department  [icon: book-open, color: orange] {
+  id serial pk 
+  department_name varchar(255)
+  created_at timestamp
+  updated_at timestamp
+}
+
+programs [icon: book, color: green] {
+  id serial pk 
+  department_id int fk
+  program_name varchar(255)
+  created_at timestamp
+  updated_at timestamp
+}
+
+teachers [icon: user-check, color: purple] {
+  id serial pk 
+  department_id int fk
+  first_name varchar(255)
+  last_name varchar(255)
+  phone_number char(20)
+  email varchar(322)
+  created_at timestamp
+  updated_at timestamp
+}
+
+
+courses [ icon:graduation-cap, color: green] {
+  id serial pk 
+  program_id int fk
+  course_name varchar(255)
+  created_at timestamp
+  updated_at timestamp
+}
+
+short_courses [icon: file-clock, color: teal] {
+  id serial pk 
+  department_id int fk
+  course_name varchar(255)
+  created_at timestamp
+  updated_at timestamp
+}
+
+teacher_courses [icon: link, color: violet] {
+  id serial pk
+  teacher_id int fk
+  course_id int fk
+  created_at timestamp
+}
+
+programs_enrollment [icon: handshake, color: yellow] {
+  id serial pk
+  student_id int fk
+  is_student_passed_prev_exam boolean
+  program_id int fk
+  created_at timestamp
+  updated_at timestamp
+}
+
+short_courses_enrollment [icon: file-clock, color: teal] {
+  id serial pk 
+  student_id int fk
+  short_course_id int fk
+  enrollment_date date
+  created_at timestamp
+  updated_at timestamp
+}
+
+programs_fee_structure [icon: credit-card, color: red] {
+  id serial pk
+  program_id int fk
+  total_fee decimal
+  admission_fee decimal
+  semester_fee decimal
+  created_at timestamp
+  updated_at timestamp
+}
+
+short_courses_fee_structure [icon: credit-card, color: aqua] {
+  id serial pk
+  short_course_id int fk
+  total_fee decimal
+  created_at timestamp
+  updated_at timestamp
+}
+
+fee_payments [icon: credit-card, color: red]{
+  id serial pk
+  student_id int fk
+  program_id int fk null
+  short_course_id int fk null
+  amount_paid decimal
+  payment_date date
+  payment_method varchar(50)
+  created_at timestamp
+  updated_at timestamp
+}
+
+
+
+programs.department_id > department.id
+short_courses.department_id > department.id
+
+courses.program_id > programs.id
+teachers.department_id > department.id
+teacher_courses.teacher_id > teachers.id
+teacher_courses.course_id > courses.id
+
+programs_enrollment.student_id > students.id
+programs_enrollment.program_id > programs.id
+short_courses_enrollment.student_id > students.id
+short_courses_enrollment.short_course_id > short_courses.id
+
+programs_fee_structure.program_id > programs.id
+short_courses_fee_structure.short_course_id > short_courses.id
+
+
+fee_payments.student_id > students.id
+fee_payments.program_id > programs.id
+fee_payments.short_course_id > short_courses.id

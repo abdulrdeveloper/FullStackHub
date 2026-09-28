@@ -1,0 +1,112 @@
+title Instagram Basic DB
+styleMode watercolor
+colorMode pastel
+
+// users, posts, stories, comments, likes, followers, bookmarks, account_setting
+
+users [icon: user, color: blue] {
+  id serial pk
+  username varchar(50) unique not null
+  email varchar(322) unique not null
+  password varchar(256)
+  phone_number char(15)
+  dob date
+  avatar_url text
+  bio text
+  email_verification_token text
+  forget_password_token text
+  created_at timestamp
+  updated_at timestamp
+}
+
+posts [icon: notebook, color: yellow] {
+  id serial pk
+  caption text
+  image_url text null
+  video_url text null
+  reel_url text null
+
+  author_id int fk
+
+  created_at timestamp
+  updated_at timestamp
+}
+
+stories [icon: notebook, color: orange] {
+  id serial pk
+  caption text
+  image_url text null
+  video_url text null
+
+  posts_id int fk null
+  author_id int fk
+
+  created_at timestamp
+  updated_at timestamp
+}
+
+comments [icon: comment, color: green] {
+  id serial pk
+
+  author_id int fk
+  posts_id int fk
+
+  content text
+
+  created_at timestamp
+  updated_at timestamp
+}
+
+likes [icon: heart, color: red] {
+  id serial pk
+
+  author_id int fk
+  posts_id int fk
+
+  created_at timestamp
+  updated_at timestamp
+}
+
+followers [icon: gcp-permissions, color: purple] {
+  id serial pk
+
+  follower_id int fk
+  following_id int fk
+
+  created_at timestamp
+  updated_at timestamp
+}
+
+bookmarks [icon: bookmark, color: pink] {
+  id serial pk
+
+  posts_id int fk
+  author_id int fk
+
+  created_at timestamp
+  updated_at timestamp
+}
+
+account_setting [icon: settings, color: red] {
+  id serial pk
+
+  user_id int fk
+  is_account_private boolean
+
+  created_at timestamp
+  updated_at timestamp
+}
+
+users.id < posts.author_id
+users.id < stories.author_id
+users.id < comments.author_id
+users.id < likes.author_id
+users.id < bookmarks.author_id
+users.id < followers.follower_id
+users.id < followers.following_id
+users.id < account_setting.user_id
+
+posts.id < comments.posts_id
+posts.id < likes.posts_id
+posts.id < bookmarks.posts_id
+posts.id < stories.posts_id

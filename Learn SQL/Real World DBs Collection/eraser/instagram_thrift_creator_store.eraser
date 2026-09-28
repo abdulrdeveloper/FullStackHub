@@ -1,0 +1,70 @@
+title Instagram Thrift Creator Store
+
+// customers, products, orderItems, orders, payment, shipping
+
+customers [icon:user, color:blue] {
+  id serial pk
+  full_name varchar(55)
+  email varchar(322)
+  phone_number CHAR(18)
+  created_at timestamp
+  updated_at timestamp
+}
+
+products [icon:shopping-bag, color:yellow] {
+  id serial pk 
+  product_name varchar(255)
+  product_description text
+  product_type varchar(13)
+  product_categary varchar(50)
+  product_price DEC(10,2)
+  product_color varchar(10)
+  product_size varchar(7)
+  product_condition varchar(10)
+
+  created_at timestamp
+  updated_at timestamp
+}
+
+orders [icon:list-ordered, color:green] {
+  id serial pk
+  customer_id int fk
+  total_amount DEC(10,2)
+  status varchar(10)
+
+  created_at timestamp
+  updated_at timestamp
+}
+
+orderItems [icon:package, color:orange] {
+  id serial pk
+  order_id int fk
+  product_id int fk
+  price_at_time DEC(10,2)
+  quantity int
+  created_at timestamp
+  updated_at timestamp
+}
+
+payment [icon:credit-card,color:red] {
+  id serial pk
+  order_id int fk
+  total_payment DEC(10,2)
+  method varchar(15)
+  paid_at date
+  status varchar(15)
+}
+
+shipping [icon:truck, color:purple] {
+  id serial pk
+  order_id int fk
+  status varchar(15)
+  tracking_number varchar(255)
+  address varchar(255)
+}
+
+orders.id - shipping.order_id
+orders.id - payment.order_id
+customers.id < orders.customer_id
+orders.id < orderItems.order_id
+products.id < orderItems.product_id

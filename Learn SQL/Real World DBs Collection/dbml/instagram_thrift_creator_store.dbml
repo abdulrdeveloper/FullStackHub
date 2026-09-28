@@ -1,0 +1,64 @@
+Table customers {
+  id serial [pk]
+  full_name varchar(55)
+  email varchar(322)
+  phone_number char(18)
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table products {
+  id serial [pk]
+  product_name varchar(255)
+  product_description text
+  product_type varchar(13)
+  product_categary varchar(50)
+  product_price "DEC(10,2)"
+  product_color varchar(10)
+  product_size varchar(7)
+  product_condition varchar(10)
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table orders {
+  id serial [pk]
+  customer_id int
+  total_amount "DEC(10,2)"
+  status varchar(10)
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table orderItems {
+  id serial [pk]
+  order_id int
+  product_id int
+  price_at_time "DEC(10,2)"
+  quantity int
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table payment {
+  id serial [pk]
+  order_id int
+  total_payment "DEC(10,2)"
+  method varchar(15)
+  paid_at date
+  status varchar(15)
+}
+
+Table shipping {
+  id serial [pk]
+  order_id int
+  status varchar(15)
+  tracking_number varchar(255)
+  address varchar(255)
+}
+
+Ref: orders.id - shipping.order_id
+Ref: orders.id - payment.order_id
+Ref: customers.id < orders.customer_id
+Ref: orders.id < orderItems.order_id
+Ref: products.id < orderItems.product_id

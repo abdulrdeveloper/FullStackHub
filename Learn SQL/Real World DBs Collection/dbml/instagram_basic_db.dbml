@@ -1,0 +1,89 @@
+Table users {
+  id serial [pk]
+  username varchar(50) [unique, not null]
+  email varchar(322) [unique, not null]
+  password varchar(256)
+  phone_number char(15)
+  dob date
+  avatar_url text
+  bio text
+  email_verification_token text
+  forget_password_token text
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table posts {
+  id serial [pk]
+  caption text
+  image_url text
+  video_url text
+  reel_url text
+  author_id int
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table stories {
+  id serial [pk]
+  caption text
+  image_url text
+  video_url text
+  posts_id int
+  author_id int
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table comments {
+  id serial [pk]
+  author_id int
+  posts_id int
+  content text
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table likes {
+  id serial [pk]
+  author_id int
+  posts_id int
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table followers {
+  id serial [pk]
+  follower_id int
+  following_id int
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table bookmarks {
+  id serial [pk]
+  posts_id int
+  author_id int
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table account_setting {
+  id serial [pk]
+  user_id int
+  is_account_private boolean
+}
+
+Ref: users.id < posts.author_id
+Ref: users.id < stories.author_id
+Ref: users.id < comments.author_id
+Ref: users.id < likes.author_id
+Ref: users.id < bookmarks.author_id
+Ref: users.id < followers.follower_id
+Ref: users.id < followers.following_id
+Ref: users.id - account_setting.user_id
+
+Ref: posts.id < comments.posts_id
+Ref: posts.id < likes.posts_id
+Ref: posts.id < bookmarks.posts_id
+Ref: posts.id < stories.posts_id

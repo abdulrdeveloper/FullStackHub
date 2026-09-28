@@ -15,12 +15,15 @@ function boilWater(time) {
     }, time);
   });
 }
-
+// we call the function and then we can use then catch block to handle the promise
 boilWater(200)
   .then((msg) => console.log("Resolved: ", msg))
   .catch((err) => console.log("Rejected: ", err.message));
 
-function grindLeaves() {
+
+  // like this we can make functions which return promises and we can use them in async await or then catch block
+
+  function grindLeaves() {
   return Promise.resolve("Leaves grounded");
 }
 
