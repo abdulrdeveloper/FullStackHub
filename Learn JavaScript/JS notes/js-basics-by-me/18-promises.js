@@ -15,7 +15,6 @@ function deliverOrderCB(order, cb) {
 
 
 
-
 // old machines mai jab promises nai hota thay tab aise likhtay thay  yay kisi ko jaldi samaj nai atay thay
 prepareOrderCB("Biryani", (err, order) => {
     if (err) return console.log(err);
@@ -27,7 +26,6 @@ prepareOrderCB("Biryani", (err, order) => {
         });
     });
 });
-
 
 
 // ab isi same code ko promises se likhtay hain 

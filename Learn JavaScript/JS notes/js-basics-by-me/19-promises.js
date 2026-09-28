@@ -1,7 +1,6 @@
 // pending, done (fulfill, resolve), nope(not,reject,nako)
-//
 
-const promise = new Promise((resolve, reject) => {
+const promise = new Promise((resolve, _reject) => {
    
     // resolve("ChaiCode"); // ek promise jo future mai kabhi complete hoga ose resolve bola jata he ,
     //  or yay promise kuch der baad complete hotay hain yay time laytay hain to ham ose setime mai likh saktay hain saath mai uska time bi
@@ -31,4 +30,3 @@ promise.then((finaldata)=> {
 
 // interview code ~~
 promise.then(console.log); // same output Chai Code why ??
-

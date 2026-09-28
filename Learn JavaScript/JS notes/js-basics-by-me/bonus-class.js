@@ -261,6 +261,7 @@ console.log(priceListArray);
 //  9. FREEZE & SEAL
 // ============================================================
 
+
 // --- Freeze (Nothing can change) ---
 const displayCase = {
     artifact: "Obsidian",
@@ -274,6 +275,7 @@ delete displayCase.locked;             // Not worked
 console.log(Object.isFrozen(displayCase)); // true
 
 // --- Seal (Can edit, cannot add/delete) ---
+
 const catalogEntry = {
     id: "ART-001",
     description: "Ancient Crows",
@@ -289,6 +291,7 @@ console.log(Object.isSealed(catalogEntry)); // true
 // ============================================================
 //  10. HOISTING
 // ============================================================
+
 
 // --- var (Hoisted, default = undefined) ---
 console.log(a); // undefined

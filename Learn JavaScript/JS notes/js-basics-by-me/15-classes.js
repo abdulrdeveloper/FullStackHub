@@ -39,4 +39,4 @@ console.log(someThingFromLastClass());
 
 const debutant2 = new debutant("Vashasvi")
 console.log(debutant1.walkOut === debutant2.walkOut)
-/*yay false aya kyo ke memory alag he but reference same he to false aya he easy he tum ek dafa dehan se dekho samaj aa jaiy ga*/
+/*yay false aya kyo ke memory alag he but reference same he to false aya he easy he, ek dafa dehan se dekhnay per samaj aa jaiy ga*/

@@ -1,7 +1,6 @@
 function bootNavigation(mapLoaded) {
    
     try{
-
         console.log(` is Navigation loaded:${mapLoaded}`);
         
         if(!mapLoaded){
@@ -21,4 +20,4 @@ function bootNavigation(mapLoaded) {
 const status1 = bootNavigation(false); // we can write here directly true or false 
 console.log(`Result: ${status1}`);
 
-/* ise ham gracefully handle kr saktay hain , code crash nai hota even false condition per bi failed show hota e and error control mai rehta he */
+/* ise ham gracefully handle kr saktay ain kyo ke agar error aya to fir bhi program run hoga aur error ko handle kr k print krwa dain gay  */

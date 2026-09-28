@@ -47,3 +47,4 @@ Array.prototype.last = function (){
 console.log([1,2,3].last());
 console.log(["A","B","C"].last());
 /* yay last array ka index deta he and yay just fun ke liay sai he but real world projects mai ise use krnay se avoid krna chahiyay  */
+/* pollyfill ka matlab he ke agar koi browser ya engine mai ye function nai he to usko add krdo taki sab mai work kre like hamne Array.prototype.last() ko add kiya */

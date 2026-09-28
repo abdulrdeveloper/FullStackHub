@@ -33,7 +33,3 @@ function steepTea(time) {
 function addSugar(spoons) {
   return `Added ${spoons} sugar`;
 }
-
-
-grindLeaves()
-  .then((val))

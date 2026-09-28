@@ -12,7 +12,6 @@ console.log(nonIndian.description);
 /* undefined aiy ga iska kyo ke kuch bi input nai dia ise */
 
 
-
 const biometricHash = Symbol("biomatricHash")
 const bloodGroup = Symbol("bloodGroup")
 
