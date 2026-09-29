@@ -44,3 +44,4 @@ cups.map;
 
 // closures mai vo tiffen box saath mai lay kr ata he or ise [[ SCOPE]] bola jata he  , ise cLOVE bi boltay hain but just name yaad rakhna yay 
 // ham closeaure ki help se ek catche bna saktay hain jo ke 10Million calls ko bi easily handle kr sakta he , but yay good pattern nai he , agar bohat zyaada catches lgaiy to code messy ho jata he and prhnay mai difficulty hoti he.
+// tiffen box mai ek function ka reference hota he aur uske sath us function ka lexical scope bhi hota he , isliye closure mai vo tiffen box saath mai lay kr ata he or ise [[ SCOPE]] bola jata he  , ise cLOVE bi boltay hain but just name yaad rakhna yay
