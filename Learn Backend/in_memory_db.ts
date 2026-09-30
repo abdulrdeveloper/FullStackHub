@@ -6,6 +6,9 @@
 
 
 // 1 { fname, lname, email, contact: { mobile }, address: { street, pin, country } }
+/* Yeh code asal mein ek custom In-Memory Database ka basic engine hai jo data ko temporary tor par RAM mein store karta hai.
+
+Real-world production mein hum is manual Map approach ko directly zyada use nahi karte, lekin isay samajhna backend architecture ke liye bohot zaroori hai. Industry ka sab se powerful caching tool Redis bilkul isi core concept (Key-Value pair) par kaam karta hai—faraq sirf itna hai ke Redis isi cheez ka ek behad advanced, highly scalable, aur super-fast version hai jo ek alag server par chalta hai. */
 
 type UserID = string
 
@@ -80,3 +83,19 @@ db.insertUser({
     }
 });
 
+const user = db.getUserById('user-1');
+console.log(user);
+
+db.updateUser('user-1', { lname: 'Smith' });
+
+const updatedUser = db.getUserById('user-1');
+console.log(updatedUser);
+
+db.deleteUser('user-1');
+
+try {
+    const deletedUser = db.getUserById('user-1');
+    console.log(deletedUser);
+} catch (error:any) {
+    console.error(error.message);
+}
