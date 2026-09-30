@@ -1,8 +1,14 @@
-const fs = require("fs")      // File system operations ke liye — files read/write karna
-const path = require("path")  // File paths handle karne ke liye
-const os = require("os")      // Operating system ki info lene ke liye
+// const fs = require("fs")       File system operations ke liye — files read/write karna
+// const path = require("path")   File paths handle karne ke liye
+// const os = require("os")       Operating system ki info lene ke liye
+
+// new way
+import fs from "fs";   
+import path from "path";
+import os from "os";
 
 // Yeh 3 modules Node.js mein sabse zyada use hotay hain
+
 
 // Node.js version check karna
 console.log("NodeJS: ", process.versions.node); 
