@@ -1,4 +1,4 @@
-## 🏗️ **The "Ultimate" Node.js Internals Guide**
+## **The "Ultimate" Node.js Internals Guide**
 
 ### **1. The Core Equation**
 
@@ -66,7 +66,7 @@ Aapki second image ke output ko dekhte hue, execution aise hoti hai:
 
 ---
 
-## 🇵🇰 **Summary in Roman Urdu**
+## **Summary in Roman Urdu**
 
 Asan alfaz mein:
 
