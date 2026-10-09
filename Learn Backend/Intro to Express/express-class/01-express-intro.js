@@ -144,7 +144,11 @@ function block_2_response(){
             const port = server.address().port
             const base = `http://127.0.0.1:${port}`;
             try {
-                //TODO: 
+                const data = await fetch(`${base}/text`)
+                const text = await data.json()
+                console.log('GET /text', JSON.stringify(text))
+
+                console.log("+++++++++++++++++++++++++++++++++")
             } catch (error) {
                 console.log(error)
             }
