@@ -70,7 +70,6 @@ function block_1_httpMethods(){
             const base = `http://127.0.0.1:${port}`;
 
             try {
-                //TODO
                 const listRes = await fetch(`${base}/routes`)
                 const listData = await listRes.json()
 
@@ -131,12 +130,11 @@ function block_1_httpMethods(){
         const server = app.listen(0, async () => {
             const port = server.address().port
             const base = `http://127.0.0.1:${port}`;
-
+            console.log(base);
             try {
-                //TODO
-                
-
-                
+                const listRes = await fetch(`${base}/files/docs/readme.txt`)
+                const listData = await listRes.json()
+                console.log(listData)     
             } catch (error) {
                 console.log(error)
             }

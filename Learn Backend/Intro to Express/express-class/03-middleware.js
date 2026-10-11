@@ -11,7 +11,6 @@ function block_1_httpMethods(){
             const base = `http://127.0.0.1:${port}`;
 
             try {
-                // todo
                 const listRes = await fetch(`${base}/routes`)
                 const listData = await listRes.json()
 
