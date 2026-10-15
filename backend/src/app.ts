@@ -1,5 +1,6 @@
 import express from "express";
 import type { Application, Request, Response } from "express";
+import { errorHandler } from "./common/middleware/error.middleware.js";
 
 const app: Application = express();
 
@@ -10,5 +11,7 @@ app.get("/", (req: Request, res: Response) => {
     message: "BazaarCore API is running",
   });
 });
+
+app.use(errorHandler);
 
 export default app;
