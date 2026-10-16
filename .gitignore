@@ -160,3 +160,6 @@ image.png
 .agents/
 skills-lock.json
 
+# Local scratch / test files
+test*.js
+
