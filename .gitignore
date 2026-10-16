@@ -123,9 +123,7 @@ dist
 .tern-port
 
 # Stores Visual Studio Code versions used for testing Visual Studio Code extensions
-.vscode/
-.agents/
-skills-lock.json
+.vscode-test
 
 # pnpm
 .pnpm-store
@@ -150,7 +148,15 @@ vite.config.ts.timestamp-*
 # Turbo Repo
 .turbo
 
-# md files
-phases.md
-plan.md
-STRUCTURE_GUIDE.md
+# Local plan and image assets
+local-plan.md
+image.png
+*.png
+*.jpg
+*.jpeg
+
+# IDE & workspace
+.vscode/
+.agents/
+skills-lock.json
+
