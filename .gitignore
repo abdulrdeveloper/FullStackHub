@@ -148,18 +148,8 @@ vite.config.ts.timestamp-*
 # Turbo Repo
 .turbo
 
-# Local plan and image assets
-local-plan.md
-image.png
-*.png
-*.jpg
-*.jpeg
 
 # IDE & workspace
 .vscode/
 .agents/
 skills-lock.json
-
-# Local scratch / test files
-test*.js
-
