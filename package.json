@@ -1,0 +1,30 @@
+{
+  "name": "bazaarcore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.8.0",
+      "onFail": "download"
+    }
+  },
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^18.0.8",
+    "express": "^5.3.0",
+    "joi": "^18.2.9",
+    "mongoose": "^9.11.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6"
+  }
+}
