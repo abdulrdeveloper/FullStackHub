@@ -1,37 +1,38 @@
 class apiError extends Error {
-    constructor(message, statusCode, isOperational = true) {
+    constructor(message, statusCode, errors = [], isOperational = true) {
         super(message);
         this.statusCode = statusCode;
+        this.errors = errors;
         this.isOperational = isOperational;
         Error.captureStackTrace(this, this.constructor);
     }
 
-    static badRequest(message = "Bad Request") {
-        return new apiError(message, 400);
+    static badRequest(message = "Bad Request", errors = []) {
+        return new apiError(message, 400, errors);
     }
 
-    static unauthorized(message = "Unauthorized") {
-        return new apiError(message, 401);
+    static unauthorized(message = "Unauthorized", errors = []) {
+        return new apiError(message, 401, errors);
     }
 
-    static notFound(message = "Not Found") {
-        return new apiError(message, 404);
+    static notFound(message = "Not Found", errors = []) {
+        return new apiError(message, 404, errors);
     }
 
-    static internalServerError(message = "Internal Server Error") {
-        return new apiError(message, 500);
+    static internalServerError(message = "Internal Server Error", errors = []) {
+        return new apiError(message, 500, errors);
     }
 
-    static forbidden(message = "Forbidden") {
-        return new apiError(message, 403);
+    static forbidden(message = "Forbidden", errors = []) {
+        return new apiError(message, 403, errors);
     }
 
-    static conflict(message = "Conflict") {
-        return new apiError(message, 409);
+    static conflict(message = "Conflict", errors = []) {
+        return new apiError(message, 409, errors);
     }
 
-    static tooManyRequests(message = "Too Many Requests") {
-        return new apiError(message, 429);
+    static tooManyRequests(message = "Too Many Requests", errors = []) {
+        return new apiError(message, 429, errors);
     }
 
     static validationError(message = "Validation Error", errors = []) {

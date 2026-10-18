@@ -1,10 +1,10 @@
-import { ApiError } from "../helpers/error.helper";
+import apiError from "../utils/api-error.js";
 
 const validate = (dto) => {
     return (req, res, next) => {
         const { errors, data } = dto.validate(req.body);
         if (errors) {
-            throw ApiError.badRequest(errors.join(": "));
+            throw apiError.badRequest("Validation failed", errors);
         }
         req.body = data;
         next();

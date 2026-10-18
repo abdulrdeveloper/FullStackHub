@@ -1,4 +1,4 @@
-class apiResponse {
+class ApiResponse {
     static ok = (res, data = null, message) => {
         res.status(200).json({
             success: true,
@@ -20,4 +20,4 @@ class apiResponse {
     };
 }
 
-export default apiResponse;
+export default ApiResponse;
