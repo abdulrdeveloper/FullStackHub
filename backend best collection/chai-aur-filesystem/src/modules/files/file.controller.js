@@ -9,22 +9,46 @@ const validateFileSignature = async (filePath, mimetype) => {
   let fileHandle;
   try {
     fileHandle = await open(filePath, "r");
-    const buffer = Buffer.alloc(8);
-    await fileHandle.read(buffer, 0, 8, 0);
+    const buffer = Buffer.alloc(12);
+    await fileHandle.read(buffer, 0, 12, 0);
 
-    const signatures = {
-      "image/jpeg": [[0xff, 0xd8, 0xff]],
-      "image/png": [[0x89, 0x50, 0x4e, 0x47]],
-      "image/gif": [[0x47, 0x49, 0x46, 0x38]],
-      "image/webp": [[0x52, 0x49, 0x46, 0x46]],
-    };
+    if (mimetype === "image/jpeg") {
+      return buffer[0] === 0xff && buffer[1] === 0xd8 && buffer[2] === 0xff;
+    }
 
-    const expected = signatures[mimetype];
-    if (!expected) return false;
+    if (mimetype === "image/png") {
+      return (
+        buffer[0] === 0x89 &&
+        buffer[1] === 0x50 &&
+        buffer[2] === 0x4e &&
+        buffer[3] === 0x47
+      );
+    }
 
-    return expected.some((sig) =>
-      sig.every((byte, index) => buffer[index] === byte)
-    );
+    if (mimetype === "image/gif") {
+      return (
+        buffer[0] === 0x47 &&
+        buffer[1] === 0x49 &&
+        buffer[2] === 0x46 &&
+        buffer[3] === 0x38
+      );
+    }
+
+    if (mimetype === "image/webp") {
+      const isRiff =
+        buffer[0] === 0x52 &&
+        buffer[1] === 0x49 &&
+        buffer[2] === 0x46 &&
+        buffer[3] === 0x46;
+      const isWebp =
+        buffer[8] === 0x57 &&
+        buffer[9] === 0x45 &&
+        buffer[10] === 0x42 &&
+        buffer[11] === 0x50;
+      return isRiff && isWebp;
+    }
+
+    return false;
   } catch {
     return false;
   } finally {
