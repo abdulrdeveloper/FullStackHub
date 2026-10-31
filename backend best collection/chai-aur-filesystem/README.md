@@ -173,7 +173,7 @@ pnpm start     # Start in production mode
   url:          { type: String, required: true },
   storageType:  { type: String, enum: ["local", "imagekit"], default: "local" },
   mimetype:     { type: String },
-  size:         { type: String },
+  size:         { type: Number, required: true }, // Size in bytes
   fileId:       { type: String, default: null }, // ImageKit file ID
   createdAt:    Date,
   updatedAt:    Date
